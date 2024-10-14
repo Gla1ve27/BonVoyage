@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>BondVoyage Registration</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Registration</h2>
+            <h3>Personal Information</h3>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <div class="name-container">
+                        <div class="name-field">
+                            <label for="firstName">First Name: <span class="required">*</span></label>
+                            <input type="text" id="firstName" placeholder="Please enter your first name" required>
+                        </div>
+                        <div class="name-field">
+                            <label for="lastName">Last Name: <span class="required">*</span></label>
+                            <input type="text" id="lastName" placeholder="Please enter your last name" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="name-container">
+                        <div class="name-field">
+                            <label for="middleName">Middle Name:</label>
+                            <input type="text" id="middleName" placeholder="Please enter your middle name">
+                        </div>
+                        <div class="name-field">
+                            <label for="suffix">Suffix:</label>
+                            <input type="text" id="suffix" placeholder="Please enter your suffix">
+                        </div>
+                        <div class="name-field age-field">
+                            <label for="age">Age:</label>
+                            <div class="age-container">
+                                <input type="text" id="age" placeholder="0" readonly>
+                                <span class="age-suffix">Y.O.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="column">
+                            <div class="form-field">
+                                <label>Gender: <span class="required">*</span></label>
+                                <div class="gender-options">
+                                    <input type="radio" name="gender" id="male" value="Male" required>
+                                    <label for="male" class="radio-label">Male</label>
+
+                                    <input type="radio" name="gender" id="female" value="Female">
+                                    <label for="female" class="radio-label">Female</label>
+
+                                    <input type="radio" name="gender" id="others" value="Others">
+                                    <label for="others" class="radio-label">Others</label>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email: <span class="required">*</span></label>
+                                <input type="email" id="email" placeholder="Please enter your email" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Phone Number: <span class="required">*</span></label>
+                                <input type="tel" id="phone" placeholder="Please enter your phone number" required>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="form-field">
+                                <label for="birthday">Birthday: <span class="required">*</span></label>
+                                <input type="date" id="birthday" placeholder="Select Birthday" readonly>
+                                <div class="calendar-head">
+                                    <div id="month-display"></div>
+                                    <input type="number" id="year-input" min="1900" max="2100" style="width: 80px;"> <!-- Year input -->
+                                    <div class="controls">
+                                        <button id="prevmonth">❮</button>
+                                        <button id="nextmonth">❯</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="calendar-days" id="days"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" id="nextButton">Next</button>
+            </form>
+        </div>
+
+        <div class="info-container">
+            <div class="header">
+                <h1>BondVoyage.</h1>
+            </div>
+            <div class="step-indicator">
+                <div class="step">
+                    <span class="step-number active">1</span>
+                    <span class="step-line active"></span>
+                    <span class="step-number">2</span>
+                    <span class="step-line active"></span>
+                    <span class="step-number">3</span>
+                </div>
+                <h3>STEP 1: Personal Information</h3>
+            </div>
+            <div class="login-info">
+                <img src="https://img.icons8.com/ios/50/000000/user.png" alt="Profile Icon" class="profile-icon">
+                <p>Do you already have an account?</p>
+                <butt href="#">LOGIN</butt>
+            </div>
+        </div>
+    </div>
+
+    <div id="nextForm" class="hidden">
+        <h3>Next Form Placeholder</h3>
+        <p>This is where the next form will go.</p>
+    </div>
+    <script src="calendar.js"></script>
+    <script src="registration.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.main-container {
+    background-color: #fefefe;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+h2 {
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.name-container {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.name-field {
+    flex: 1; 
+}
+
+.name-field:first-child {
+    margin-right: 20px; 
+}
+
+.name-field label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.required {
+    color: #F06200; 
+}
+
+.name-field input[type="text"] {
+    width: 90%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    margin-right: 15px;
+}
+
+.name-field:not(:last-child) {
+    margin-right: 20px; 
+}
+
+.age-container {
+    display: flex;
+    align-items: center;
+}
+
+.age-container input[type="text"] {
+    width: fit-content; 
+}
+
+.row {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.column {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.column:last-child {
+    margin-right: 0; 
+}
+
+.form-field {
+    margin-bottom: 15px; 
+}
+
+.form-field label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field input[type="date"] {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.gender-options {
+    display: flex; 
+    align-items: center; 
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 10px; 
+}
+
+
+.info-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-basis: 300px; 
+}
+
+.age-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.age-container input[type="text"] {
+    width: 60px; 
+    padding-right: 30px; 
+}
+
+.age-suffix {
+    margin-left: 5px; 
+    font-weight: bold; 
+    color: #888; 
+    line-height: 1.5; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    color: #F06200;
+    margin-bottom: 20px;
+}
+
+.step-indicator {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-number {
+    background-color: #F06200;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.step-line {
+    width: 50px;
+    height: 3px;
+    background-color: #F06200;
+    flex-shrink: 0;
+}
+
+.active {
+    background-color: #F06200;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.login-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.profile-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#nextForm {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    border-color: orange;
+}
+
+.age-container {
+    display: flex;
+    align-items: center;
+}
+
+.age-container input[type="text"] {
+    width: 60px;
+    padding-right: 30px;
+}
+
+.age-suffix {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #888;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none; 
+}
+
+.gender-options {
+    display: flex; 
+    align-items: center; 
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 10px; 
+}
+
+.radio-label {
+    margin-right: 20px; 
+}
+
+.radio-label {
+    position: relative;
+    padding-left: 25px; 
+    cursor: pointer;
+    color: #333;
+}
+
+.radio-label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+.radio-label:hover:before {
+    border-color: #F06200; 
+}
+
+input[type="radio"]:checked + .radio-label:before {
+    background-color: #E8391A; 
+    border-color: #F06200;
+}
+
+.radio-label:hover {
+    color: #F06200; 
+}
+
+input[type="date"]:hover {
+    border-color: #F06200; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    border-color: #F06200; 
+    outline: none; 
+}
+
+.calendar {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.calendar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff8533;
+    color: white;
+    padding: 10px;
+}
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid #ccc;
+}
+.calendar-day {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.calendar-day:hover {
+    background-color: #f0f0f0;
+}
+#month-year{
+    margin-right: auto;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    gap: 6%;
+}
