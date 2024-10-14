@@ -1,206 +1,213 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #ffffff;
+*{
+  font-family: "Inter", sans-serif;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+}
+  
 .main-container {
-    background-color: #fefefe;
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  background-color: #fefefe;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .form-container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    flex: 1; 
-    margin-right: 20px; 
+  background-color: #fefefe;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  flex: 1;
+  margin-right: 20px;
+  position: relative;
 }
 
 h2 {
-    text-align: left;
-    margin: 0 0 20px 0;
+  font-size: 32px;
+  text-align: left;
+  margin: 0 0 20px 0;
+  font-weight: bolder;
 }
 
 h3 {
-    margin: 10px 0;
-    color: #555;
+  margin: 10px 0;
+  color: #202020;
+  text-align: center;
+  padding-bottom: 5%;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .name-container {
-    display: flex;
-    justify-content: flex-start; 
+  display: flex;
+  justify-content: flex-start;
+  width: 102.5%;
 }
 
 .name-field {
-    flex: 1; 
+  flex: 1;
 }
 
 .name-field:first-child {
-    margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .name-field label {
-    display: block; 
-    margin-bottom: 5px; 
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.7); 
+}
+  
+.required {
+  color: #f06200;
 }
 
-.required {
-    color: #F06200; 
+.optional {
+  color: #00000060;
+}
+
+.label-with-optional {
+  display: inline-flex;
+  align-items: center; 
 }
 
 .name-field input[type="text"] {
-    width: 90%; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-    margin-right: 15px;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  margin-right: 15px;
 }
-
+  
 .name-field:not(:last-child) {
-    margin-right: 20px; 
+  margin-right: 20px;
 }
-
+  
 .age-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
+  
 .age-container input[type="text"] {
-    width: fit-content; 
+  width: 60px;
+  padding-right: 30px;
 }
 
 .row {
-    display: flex; 
-    justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
-
+  
 .column {
-    flex: 1; 
-    margin-right: 20px; 
+  flex: 1;
 }
-
+  
 .column:last-child {
-    margin-right: 0; 
+  margin-right: 0;
 }
 
 .form-field {
-    margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 .form-field label {
-    display: block; 
-    margin-bottom: 5px; 
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.7); 
 }
 
 .form-field input[type="email"],
 .form-field input[type="tel"],
 .form-field input[type="date"] {
-    width: 100%; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  height: 10%;
 }
-
-.gender-options {
-    display: flex; 
-    align-items: center; 
-}
-
-.gender-options input[type="radio"] {
-    margin-right: 10px; 
-}
-
 
 .info-container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    flex-basis: 300px; 
+  padding: 30px;
+  flex-basis: 300px;
 }
 
 .age-container {
-    display: flex; 
-    align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .age-container input[type="text"] {
-    width: 60px; 
-    padding-right: 30px; 
+  width: 60px;
+  padding-right: 30px;
 }
 
 .age-suffix {
-    margin-left: 5px; 
-    font-weight: bold; 
-    color: #888; 
-    line-height: 1.5; 
-    height: 100%; 
-    display: flex; 
-    align-items: center; 
+  margin-left: 5px;
+  font-weight: bold;
+  color: #888;
+  line-height: 1.5;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .header {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    color: #F06200;
-    margin-bottom: 20px;
+  color: #f06200;
+  margin-bottom: 20px;
 }
 
 .step-indicator {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .step {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .step-number {
-    background-color: #F06200;
-    color: white;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
+  background-color: #f06200;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
 }
 
 .step-line {
-    width: 50px;
-    height: 3px;
-    background-color: #F06200;
-    flex-shrink: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #f06200;
+  flex-shrink: 0;
 }
 
 .active {
-    background-color: #F06200;
+  background-color: #f06200;
 }
 
-
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
@@ -208,174 +215,536 @@ input[type="email"],
 input[type="number"],
 input[type="tel"],
 input[type="date"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
-input[type="radio"] {
-    margin-right: 5px;
+.form-field1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  margin-top: 5%;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #FF5722;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #e64a19;
-}
-
-.login-info {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-.profile-icon {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.hidden {
-    display: none;
-}
-
-#nextForm {
-    text-align: center;
-    margin-top: 20px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="date"]:focus {
-    border-color: orange;
-}
-
-.age-container {
-    display: flex;
-    align-items: center;
-}
-
-.age-container input[type="text"] {
-    width: 60px;
-    padding-right: 30px;
-}
-
-.age-suffix {
-    margin-left: 5px;
-    font-weight: bold;
-    color: #888;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-}
-
-input[type="radio"] {
-    display: none; 
+.form-field1 label {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7); 
 }
 
 .gender-options {
-    display: flex; 
-    align-items: center; 
+  display: flex;
+  gap: 20px;
 }
 
 .gender-options input[type="radio"] {
-    margin-right: 10px; 
+  margin-right: 10px;
 }
 
-.radio-label {
-    margin-right: 20px; 
+#middleName {
+  width: 140%;
+}
+#email {
+  margin-top: 5%;
+}
+label[for="phone"] {
+  margin-top: 9%;
+}
+#phone {
+  margin-top: 5%;
+}
+label[for="suffix"] {
+  margin-left: 55%;
+}
+#suffix {
+  margin-left: 55%;
 }
 
-.radio-label {
-    position: relative;
-    padding-left: 25px; 
-    cursor: pointer;
-    color: #333;
+label[for="age"] {
+  margin-left: 50%;
+}
+#age {
+  margin-left: 50%;
+  width: 88% !important;
+  background-color: #79787886;
+}
+  
+input[type="radio"] {
+  margin-right: 5px;
 }
 
-.radio-label:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    background-color: white;
-    transition: border-color 0.3s ease;
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.radio-label:hover:before {
-    border-color: #F06200; 
+button:hover {
+  background-color: #e64a19;
 }
 
-input[type="radio"]:checked + .radio-label:before {
-    background-color: #E8391A; 
-    border-color: #F06200;
+.login-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-.radio-label:hover {
-    color: #F06200; 
+.profile-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
-input[type="date"]:hover {
-    border-color: #F06200; 
+.hidden {
+  display: none;
+}
+
+#nextForm {
+  text-align: center;
+  margin-top: 20px;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="date"]:focus {
-    border-color: #F06200; 
-    outline: none; 
+  border-color: orange;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.age-container {
+  display: flex;
+  align-items: center;
+}
+
+.age-container input[type="text"] {
+  width: 60px;
+  padding-right: 30px;
+}
+
+.age-suffix {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #888;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio-label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #333;
+  margin-left: 5px;
+}
+
+.radio-label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.radio-label:hover:before {
+  border-color: #f06200;
+}
+
+input[type="radio"]:checked + .radio-label:before {
+  background-color: #e8391a;
+  border-color: #f06200;
+}
+
+input[type="radio"]:checked + .radio-label {
+  color: #f06200;
+}
+
+input[type="date"]:hover {
+  border-color: #f06200;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  border-color: #f06200;
+  outline: none;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .calendar {
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 300px;
+  max-width: 350px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
+
 .calendar-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff8533;
-    color: white;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 16px;
 }
+
+#month-display {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#year-input {
+  width: 60px;
+  padding: 3px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  margin-left: -10px;
+}
+
+#year-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 133, 51, 0.5);
+}
+
+.controls button {
+  background-color: #ff8533;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  background-color: #ffb566;
+}
+
+.day-labels {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #ffffff;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
 .calendar-days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    border-top: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  padding: 0;
+  gap: 0;
+  width: 100%;
 }
+
 .calendar-day {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #eee;
-    cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  font-size: 12px;
 }
+
 .calendar-day:hover {
-    background-color: #f0f0f0;
+  background-color: #ffebd6;
 }
-#month-year{
-    margin-right: auto;
+
+.current-day {
+  background-color: #ff8533;
+  color: white;
+  border-radius: 5px;
 }
-.controls{
-    display: flex;
-    justify-content: space-between;
-    gap: 6%;
+
+.calendar-day:hover {
+  background-color: #ff8533;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 6%;
+}
+
+.selected-day {
+  background-color: #ff8533;
+  color: white;
+  border-radius: 10%;
+}
+
+#month-display {
+  margin-left: 10px;
+  margin-right: -70px;
+}
+
+#year-input {
+  width: 20%;
+  text-align: center;
+  box-shadow: none;
+}
+
+.registration-line {
+  height: 8px;
+  background-color: #f06200;
+  margin: -15px 0 10px;
+  width: 8%;
+  border-radius: 13px;
+  margin-top: 3px;
+}
+
+.nextButton {
+  position: absolute;
+  bottom: 5%;
+  right: 7%;
+  padding: 4px 8px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 16%;
+  border-radius: 10px;
+}
+
+.address-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.address-field {
+  flex: 1;
+}
+
+.address-field input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.building-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.building-field {
+  flex: 1;
+}
+
+.building-field input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.country-region-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.country-region-container .form-field {
+  flex: 1;
+}
+
+.country-region-container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.city-postal-container {
+display: flex;
+justify-content: space-between;
+gap: 20px; 
+}
+
+.city-postal-container .form-field {
+  flex: 1;
+}
+
+
+.city-postal-container select,
+.city-postal-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-icon-text {
+  text-align: center;
+}
+
+.upload-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.upload-container p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.upload-container:hover {
+  background-color: #ececec;
+  border-color: #ff6200;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: auto;
+}
+
+.termscondition {
+  text-align: center;
+}
+
+.termscondition .brand{
+  font-weight: bold;
+  color: #F06200;
+  cursor: pointer;
+}
+
+.termscondition p{
+  color: rgba(0, 0, 0, 0.6); 
+}
+
+#step3 label {
+  opacity: 70%;
+}
+
+#termsandcondition {
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+.termsandcondition h1, h2 {
+  color: #000000;
+}
+
+.termsandcondition h1 {
+  font-size: 24px;
+}
+
+.termsandcondition h2 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.term-container1 .a1 {
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.term-container1 .brand1 {
+  font-weight: bold;
+}
+
+.term-container1 {
+  padding: 20px;
+  margin: auto;
+}
+
+.a3 {
+  background-color: #F06200;
+  color: #ffffff;               
+  border: none;                 
+  border-radius: 13px;           
+  padding: 10px 20px;           
+  cursor: pointer;              
+  font-size: 16px;             
+  transition: background-color 0.3s ease; 
+  width: 300px;
+}
+
+.a2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+
+.a2-button:hover {
+  background-color: #ffe6d1;
 }
