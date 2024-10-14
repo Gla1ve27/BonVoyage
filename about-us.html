@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/about-us.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="items">
+            <h2>Travel Together, Discover More with Bon Voyage</h2>
+            <p>Welcome to Bon Voyage! We believe that the best adventures are the ones shared with others</p>
+            <a href="#" class="button">Know More</a>
+        </div>
+        <div class="image-container">
+            <img src="assets/images/girl-with-phone-orange-background_220770-6018.avif" class="mainIMG
+            ">
+            <div class="features">
+                <div class="feature-item" onclick="hiddenmsg('text1')">
+                    <img src="assets/images/pig-icon.png">
+                    <div class="feat-text">
+                        <strong>Recommended Vacations</strong><br>
+                        <p>Based on your allotted budget</p>
+                    </div>
+                    <div id="text1" class="hidden-text">QPALQPALQPALQPALQPALQPALqpalqpalqpal</div>
+                </div>
+
+                <div class="feature-item" onclick="hiddenmsg('text2')">
+                    <img src="icon2.png">
+                    <div class="feat-text">
+                        <strong>Tour Buddies</strong><br>
+                        <p>Be friends with other people</p>
+                        <div id="text2" class="hidden-text">Here is some more information about Tour Buddies.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="features2">
+                <div class="feature-item" onclick="hiddenmsg('text3')">
+                    <img src="icon2.png">
+                    <div class="feat-text">
+                        <strong>Communicate Easily</strong><br>
+                        <p>Connect with your tour buddies</p>
+                        <div id="text3" class="hidden-text">Here is some more information about Tour Buddies.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tourism-industry">
+        <div class="TI-text">
+            <h2>Changing the Tourism Industry with Innovation</h2>
+            <p>
+                At Bon Voyage, we're transforming the tourism industry by fostering
+                authentic connections among travelers through innovative technology.
+                Our platform makes it easy to join group vacations, ensuring seamless
+                experiences and meaningful interactions.
+            </p>
+        </div>
+    </div>
+
+    <div class="VacationItineraries">
+        <div class="text-box">
+            <h2 id="controlled-title">Affordable Vacations and Itineraries in the Philippines</h2>
+            <p id="controlled-description">
+                Bon Voyage offers affordable vacations and meticulously crafted itineraries in the Philippines, 
+                making it easy for travelers to explore this stunning archipelago without breaking the bank.
+            </p>
+        </div>
+        <div class="image-box">
+            <img id="controlled-img" src="assets/backgrounds/bg-palawan.jpg">
+        </div>
+        <div class="controls">
+            <button onclick="">‹</button>
+            <button onclick="">›</button> 
+        </div>
+    </div>
+    
+
+
+    <script>
+        function hiddenmsg(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
