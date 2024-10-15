@@ -234,9 +234,25 @@ p {
 .Services h2 {
   text-align: left !important;
   margin-bottom: -10px !important;
+  margin-left: 2%;
+  position: relative;
 }
+.Services h2:before{
+  content: "";
+  position: absolute;
+  left: -2%;
+  top: 65.5%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  width: 5px;
+  height: 60px;
+  background-color: #ff7f00;
+}
+
 .Services .pServ {
   text-align: left !important;
+  margin-left: 2%;
+  margin: .5% 0% 2% 2%;
 }
 .Services .card-text {
   text-align: center !important;
@@ -244,4 +260,35 @@ p {
 }
 .carousel-inner {
   padding: 20px 0;
+}
+.mission-vision {
+  padding: 5rem 0;
+}
+
+.mission-vision h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  color: #333;
+  text-align: left;
+}
+
+.mission-vision h2:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 70%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  width: 5px;
+  height: 60px;
+  background-color: #ff7f00;
+}
+
+.mission-vision p {
+  margin: -28px 0 0 0;
+  padding-left: 2%;
+  color: #666;
+  text-align: left;
 }
