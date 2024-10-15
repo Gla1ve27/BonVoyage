@@ -1,183 +1,247 @@
 body {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
 .items {
-    max-width: 50%;
-
+  max-width: 50%;
 }
 h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
-    width: 75%;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  width: 75%;
 }
 p {
-    font-size: 14px;
-    color: #666;
-    margin: 15px 0 -2px;
-    width:75%;
+  font-size: 14px;
+  color: #666;
+  margin: 15px 0 -2px;
+  width: 75%;
 }
 .button {
-    background-color: #ff6200;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    font-weight: bold;
-    margin-top: 20px;
-    width: 30%;
-    font-size: 14px;
+  background-color: #ff6200;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 30%;
+  font-size: 14px;
 }
 .features {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    width: 250px;
-    font-size: 14px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-150%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  width: 250px;
+  font-size: 14px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-150%, -50%);
 }
 .feature-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 26px;
-    transition: background-color 0.3s;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 26px;
+  transition: background-color 0.3s;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .feature-item:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 .feature-item img {
-    width: 30px !important;
-    height: 30px;
+  width: 30px !important;
+  height: 30px;
 }
-.feat-text{
-    margin-top: -8px;
+.feat-text {
+  margin-top: -8px;
 }
 .feat-text p {
-    margin-top: 0px;
-    font-size: 12px;
-    width: 100%;
+  margin-top: 0px;
+  font-size: 12px;
+  width: 100%;
 }
 .features2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    width: 250px;
-    font-size: 14px;
-    top: 15%;
-    left: 180%;
-    transform: translate(-150%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  width: 250px;
+  font-size: 14px;
+  top: 15%;
+  left: 180%;
+  transform: translate(-150%, -50%);
 }
 .hidden-text {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 7;
-    width: 230px;
-    overflow-wrap: break-word;
-    white-space: normal;
+  display: none;
+  margin-top: -10%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  width: 247px;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .image-container {
-    position: relative;
-    max-width: 50%;
+  position: relative;
+  max-width: 50%;
 }
 .image-container img {
-    width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  border-radius: 20px;
 }
-.image-container .mainIMG{
-    object-fit: cover;
-    height:360px;
-    width: 360px;
-}   
+.image-container .mainIMG {
+  object-fit: cover;
+  height: 360px;
+  width: 360px;
+}
 .tourism-industry {
-    margin-top: 60px;
-    padding: 40px;
-    background-color: #f4f4f4;
-    text-align: justify;
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: justify;
 }
 
 .tourism-industry .TI-text {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 .tourism-industry h2 {
-    margin-left: 12%;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
+  margin-left: 12%;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .tourism-industry p {
-    font-size: 16px;
-    text-align: center;
-    color: #666;
-    margin: 0 auto;
-    line-height: 1.6;
-    max-width: 85%;
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+  margin: 0 auto;
+  line-height: 1.6;
+  max-width: 85%;
 }
 
 .VacationItineraries {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .text-box {
-    position: relative;
-    left: 5%;
-    background-color: #f37021; 
-    color: white;
-    padding: 20px;
-    width: 40%;
-    min-width: 300px;
+  position: relative;
+  left: 5%;
+  background-color: #f37021;
+  color: white;
+  padding: 20px;
+  width: 40%;
+  min-width: 300px;
+  padding: 3%;
+  border-radius: 5%;
 }
 
 .image-box {
-    width: 60%;
-    padding-left: 20px;
+  width: 60%;
+  padding-left: 20px;
 }
 
 .image-box img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
 }
 
 .controls {
-    position: absolute;
-    left: 20%;
-    bottom: -25%;
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
+  position: absolute;
+  left: 39%;
+  bottom: -18%;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.Philippines {
+  margin-top: 60px;
+  text-align: justify;
+  justify-content: center;
+}
+.Philippines p {
+  font-size: larger;
+  text-align: justify;
+  justify-content: center;
+  margin: 150px 380px -40px;
+}
+.Philippines #phID {
+  font-size: 220px;
+  text-align: justify;
+  justify-content: center;
+  background-image: url(../backgrounds/bg-palawan.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 100% !important;
+}
+.Joinbutton {
+  margin: 160px 410px -40px;
+  background-color: #ff6200;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 30%;
+  font-size: 14px;
+}
+
+.Services {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: left !important;
+}
+.card-img-top {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.Services h2 {
+  text-align: left !important;
+  margin-bottom: -10px !important;
+}
+.Services .pServ {
+  text-align: left !important;
+}
+.Services .card-text {
+  text-align: center !important;
+  width: 100%;
+}
+.carousel-inner {
+  padding: 20px 0;
 }
