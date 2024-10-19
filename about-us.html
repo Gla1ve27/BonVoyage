@@ -309,6 +309,34 @@
       <h2>Discover What Our Customers Have to Say!</h2>
       
     </div>
+    <div class="container">
+      <div class="carousel slide" id="customerCarousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/backgrounds/bg-palawan.jpg" alt="Customer 1" class="d-block w-100 circle-avatar">
+            <div class="carousel-caption d-none d-md-block text-center">
+              <h5>Sarah L.</h5>
+              <p>Happy Customer</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="path/to/customer2.jpg" alt="Customer 2" class="d-block w-100 circle-avatar">
+            <div class="carousel-caption d-none d-md-block text-center">
+              <h5>John D.</h5>
+              <p>Satisfied User</p>
+            </div>
+          </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#customerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#customerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 </div>  
 
     <div class="container" id="first">
@@ -341,9 +369,11 @@
     </div>
   </div>
 
-
-
-
+  <script>
+const customerCarousel = new bootstrap.Carousel('#customerCarousel', {
+  interval: 10000
+});
+  </script>
   <script>
     function hiddenmsg(id) {
       var element = document.getElementById(id);
