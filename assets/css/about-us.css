@@ -320,6 +320,22 @@ p {
 #third img {
   border-radius: 5%;
 }
+
+#first p,
+#second p,
+#third p {
+  color: black;
+}
+
+
+#first .row:hover,
+#second .row:hover,
+#third .row:hover {
+  background-color: #ff6200;
+  color: black;
+}
+
+
 .switch {
   width: 90px !important;
   margin-left: 45%;
@@ -390,12 +406,6 @@ p {
 }
 .carousel-indicators > li {
   border-radius: 50%;
-}
-#first .row:hover,
-#second .row:hover,
-#third .row:hover {
-  background-color: #ff6200;
-  color: black;
 }
 
 .customer-carousel {
