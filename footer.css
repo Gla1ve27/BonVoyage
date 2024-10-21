@@ -1,15 +1,4 @@
-/**
-* Template Name: Ninestars
-* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
     --default-font: Arial, sans-serif;
@@ -58,177 +47,329 @@
   }
   
   /*--------------------------------------------------------------
+  # General Styling & Shared Classes
+  --------------------------------------------------------------*/
+  body {
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* PHP Email Form Messages
+  ------------------------------*/
+  .php-email-form .error-message {
+    display: none;
+    background: #df1529;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  
+  .php-email-form .sent-message {
+    display: none;
+    color: #ffffff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  
+  .php-email-form .loading {
+    display: none;
+    background: var(--surface-color);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+  }
+  
+  .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid var(--accent-color);
+    border-top-color: var(--surface-color);
+    animation: php-email-form-loading 1s linear infinite;
+  }
+  
+  @keyframes php-email-form-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-size: 14px;
+    position: relative;
+  }
+  
+  
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+    color: gray;
+  }
+  
+  .footer .footer-links {
+    margin-bottom: 30px;
+  }
+  .col-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+  }
+  
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-links ul i {
+    margin-right: 3px;
+    font-size: 12px;
+    line-height: 0;
+    color: var(--accent-color);
+  }
+  
+  .footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .footer-links ul li:first-child {
+    padding-top: 10px;
+  }
+  
+  .footer .footer-links ul a {
+    display: inline-block;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    line-height: 1;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .footer .footer-links ul a {
+    color: black;
+  }
+  .footer .footer-links ul a:hover {
+    color: var(--accent-color);
+  } 
+
+  .footer-logo{
+    height: 40px;
+    margin-right: 10px;
+    width: auto;
+  }
+
+  .credit-text-1{
+    font-weight: bold;
+  }
+  .credit-text-2{
+    display: block;
+    color: gray;
+    margin-left: 4%;
+  }
+  
+  .footer .credits {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+  .footer-link-4{
+    padding-left: 5%;
+  }
+
+/*--------------------------------------------------------------
 # Responsive Design for Footer
 --------------------------------------------------------------*/
 
 /* Small devices (mobile phones, 0px - 575px) */
 @media (max-width: 575px) {
-  .footer {
-      padding: 20px 0; /* Reduce padding for mobile */
-  }
+    .footer {
+        padding: 20px 0; /* Reduce padding for mobile */
+    }
 
-  .footer h4 {
-      font-size: 18px; /* Adjust heading size */
-  }
+    .footer h4 {
+        font-size: 18px; /* Adjust heading size */
+    }
 
-  .footer .footer-links {
-      margin-bottom: 15px; /* Less margin for mobile */
-  }
+    .footer .footer-links {
+        margin-bottom: 15px; /* Less margin for mobile */
+    }
 
-  .footer .footer-links ul li {
-      padding: 5px 0; /* Reduce padding for footer links */
-      font-size: 12px; /* Smaller font size for mobile */
-  }
+    .footer .footer-links ul li {
+        padding: 5px 0; /* Reduce padding for footer links */
+        font-size: 12px; /* Smaller font size for mobile */
+    }
 
-  .footer .social-links a {
-      width: 35px; /* Smaller social icons */
-      height: 35px; /* Smaller social icons */
-      font-size: 14px; /* Smaller font size for social icons */
-      margin-right: 5px; /* Less margin between social icons */
-  }
+    .footer .social-links a {
+        width: 35px; /* Smaller social icons */
+        height: 35px; /* Smaller social icons */
+        font-size: 14px; /* Smaller font size for social icons */
+        margin-right: 5px; /* Less margin between social icons */
+    }
 
-  .credit-text-2 {
-      font-size: 10px; /* Smaller credit text */
-      margin-left: 0; /* Center credit text */
-  }
+    .credit-text-2 {
+        font-size: 10px; /* Smaller credit text */
+        margin-left: 0; /* Center credit text */
+    }
 }
 
 /* Medium devices (tablets, 576px - 991px) */
 @media (min-width: 576px) and (max-width: 991px) {
-  .footer {
-      padding: 30px 0; /* Moderate padding for tablets */
-  }
+    .footer {
+        padding: 30px 0; /* Moderate padding for tablets */
+    }
 
-  .footer h4 {
-      font-size: 20px; /* Adjust heading size */
-  }
+    .footer h4 {
+        font-size: 20px; /* Adjust heading size */
+    }
 
-  .footer .footer-links {
-      margin-bottom: 20px; /* Moderate margin */
-  }
+    .footer .footer-links {
+        margin-bottom: 20px; /* Moderate margin */
+    }
 
-  .footer .footer-links ul li {
-      padding: 8px 0; /* Moderate padding */
-      font-size: 14px; /* Moderate font size */
-  }
+    .footer .footer-links ul li {
+        padding: 8px 0; /* Moderate padding */
+        font-size: 14px; /* Moderate font size */
+    }
 
-  .footer .social-links a {
-      width: 40px; /* Standard size for social icons */
-      height: 40px; /* Standard size for social icons */
-      font-size: 16px; /* Moderate font size for social icons */
-      margin-right: 10px; /* Standard margin */
-  }
+    .footer .social-links a {
+        width: 40px; /* Standard size for social icons */
+        height: 40px; /* Standard size for social icons */
+        font-size: 16px; /* Moderate font size for social icons */
+        margin-right: 10px; /* Standard margin */
+    }
 
-  .credit-text-1 {
-      font-size: 14px; /* Slightly larger credit text */
-  }
+    .credit-text-1 {
+        font-size: 14px; /* Slightly larger credit text */
+    }
 
-  .credit-text-2 {
-      font-size: 12px; /* Slightly larger credit text */
-  }
+    .credit-text-2 {
+        font-size: 12px; /* Slightly larger credit text */
+    }
 }
 
 /* Large devices (laptops, 992px - 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .footer {
-      padding: 40px 0; /* Increase padding for larger devices */
-  }
+    .footer {
+        padding: 40px 0; /* Increase padding for larger devices */
+    }
 
-  .footer h4 {
-      font-size: 22px; /* Larger heading size */
-  }
+    .footer h4 {
+        font-size: 22px; /* Larger heading size */
+    }
 
-  .footer .footer-links {
-      margin-bottom: 30px; /* Increased margin */
-  }
+    .footer .footer-links {
+        margin-bottom: 30px; /* Increased margin */
+    }
 
-  .footer .footer-links ul li {
-      padding: 10px 0; /* Increased padding */
-      font-size: 16px; /* Larger font size */
-  }
+    .footer .footer-links ul li {
+        padding: 10px 0; /* Increased padding */
+        font-size: 16px; /* Larger font size */
+    }
 
-  .footer .social-links a {
-      width: 45px; /* Larger social icons */
-      height: 45px; /* Larger social icons */
-      font-size: 18px; /* Larger font size for social icons */
-      margin-right: 10px; /* Maintain margin */
-  }
+    .footer .social-links a {
+        width: 45px; /* Larger social icons */
+        height: 45px; /* Larger social icons */
+        font-size: 18px; /* Larger font size for social icons */
+        margin-right: 10px; /* Maintain margin */
+    }
 
-  .credit-text-1 {
-      font-size: 16px; /* Larger credit text */
-  }
+    .credit-text-1 {
+        font-size: 16px; /* Larger credit text */
+    }
 
-  .credit-text-2 {
-      font-size: 14px; /* Larger credit text */
-  }
+    .credit-text-2 {
+        font-size: 14px; /* Larger credit text */
+    }
 }
 
 /* Extra-large devices (24-inch desktops, 1200px and above) */
 @media (min-width: 1200px) {
-  .footer {
-      padding: 50px 0; /* Maximum padding for larger displays */
-  }
+    .footer {
+        padding: 50px 0; /* Maximum padding for larger displays */
+    }
 
-  .footer h4 {
-      font-size: 24px; /* Largest heading size */
-  }
+    .footer h4 {
+        font-size: 24px; /* Largest heading size */
+    }
 
-  .footer .footer-links {
-      margin-bottom: 40px; /* Largest margin */
-  }
+    .footer .footer-links {
+        margin-bottom: 40px; /* Largest margin */
+    }
 
-  .footer .footer-links ul li {
-      padding: 12px 0; /* Largest padding */
-      font-size: 18px; /* Largest font size */
-  }
+    .footer .footer-links ul li {
+        padding: 12px 0; /* Largest padding */
+        font-size: 18px; /* Largest font size */
+    }
 
-  .footer .social-links a {
-      width: 50px; /* Largest social icons */
-      height: 50px; /* Largest social icons */
-      font-size: 20px; /* Largest font size for social icons */
-      margin-right: 15px; /* Increased margin */
-  }
+    .footer .social-links a {
+        width: 50px; /* Largest social icons */
+        height: 50px; /* Largest social icons */
+        font-size: 20px; /* Largest font size for social icons */
+        margin-right: 15px; /* Increased margin */
+    }
 
-  .credit-text-1 {
-      font-size: 18px; /* Largest credit text */
-  }
+    .credit-text-1 {
+        font-size: 18px; /* Largest credit text */
+    }
 
-  .credit-text-2 {
-      font-size: 16px; /* Largest credit text */
-  }
-}
-
-
-
-/*--------------------------------------------------------------
-# Scroll Top Button
---------------------------------------------------------------*/
-.scroll-top {
-position: fixed;
-visibility: hidden;
-opacity: 0;
-right: 15px;
-bottom: 15px;
-z-index: 99999;
-background-color: var(--accent-color);
-width: 40px;
-height: 40px;
-border-radius: 4px;
-transition: all 0.4s;
-}
-
-.scroll-top i {
-font-size: 24px;
-color: var(--contrast-color);
-line-height: 0;
-}
-
-.scroll-top:hover {
-background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-color: var(--contrast-color);
-}
-
-.scroll-top.active {
-visibility: visible;
-opacity: 1;
+    .credit-text-2 {
+        font-size: 16px; /* Largest credit text */
+    }
 }
