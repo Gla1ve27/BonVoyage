@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .main {
   display: flex;
   justify-content: center;
@@ -12,21 +13,25 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+
 .items {
   max-width: 50%;
 }
+
 h2 {
   font-size: 32px;
   font-weight: bold;
   margin: 0;
   width: 75%;
 }
+
 p {
   font-size: 14px;
   color: #666;
   margin: 15px 0 -2px;
   width: 75%;
 }
+
 .button {
   background-color: #ff6200;
   color: white;
@@ -40,6 +45,7 @@ p {
   width: 30%;
   font-size: 14px;
 }
+
 .features {
   display: flex;
   flex-direction: column;
@@ -51,6 +57,7 @@ p {
   left: 50%;
   transform: translate(-150%, -50%);
 }
+
 .feature-item {
   display: flex;
   align-items: center;
@@ -63,21 +70,26 @@ p {
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .feature-item:hover {
   background-color: #e0e0e0;
 }
+
 .feature-item img {
   width: 30px !important;
   height: 30px;
 }
+
 .feat-text {
   margin-top: -8px;
 }
+
 .feat-text p {
   margin-top: 0px;
   font-size: 12px;
   width: 100%;
 }
+
 .features2 {
   display: flex;
   flex-direction: column;
@@ -89,6 +101,7 @@ p {
   left: 180%;
   transform: translate(-150%, -50%);
 }
+
 .hidden-text {
   display: none;
   margin-top: -10%;
@@ -106,15 +119,18 @@ p {
   position: relative;
   max-width: 50%;
 }
+
 .image-container img {
   width: 100%;
   border-radius: 20px;
 }
+
 .image-container .mainIMG {
   object-fit: cover;
   height: 360px;
   width: 360px;
 }
+
 .tourism-industry {
   margin-top: 60px;
   padding: 40px;
@@ -150,62 +166,79 @@ p {
 }
 
 .text-box {
-  position: relative;
-  left: 5%;
   background-color: #f37021;
   color: white;
-  padding: 20px;
-  width: 40%;
-  min-width: 300px;
-  padding: 3%;
-  border-radius: 5%;
+  padding: 60px;
+  width: 600px;
+  height: 450px;
+  min-width: 220px;
+  border-radius: 20px;
+  position: absolute;
+  left: 10%;
+  top: 80%;;
+}
+
+.descript{
+  color: #fafafa !important;
+  height: 65px;
+  width: 300px;
+}
+.title{
+  color: #fafafa !important;
+  height: 65px;
+  width: 440px;
+  margin-bottom: 8%;
 }
 
 .image-box {
-  width: 60%;
-  padding-left: 20px;
+  width: 100%;
 }
 
 .image-box img {
-  width: 100%;
+  width: 60%;
+  max-height: 70%;
   height: auto;
   border-radius: 5%;
+  margin: 0 0 2% 30%;
 }
 
-.controls {
-  margin-bottom: -2%;
-  margin-top: 10%;
-  display: flex;
-  justify-content: space-between;
-  gap: 10%;
-  width: 100px;
+.control-prev {
+  position: relative;
+  top: 50%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
-.controls .btn-primary {
-  border-radius: 50% !important;
-  background-color: #fa925100 !important;
-  border: #ffffff solid 2px;
-  width: 100px;
+.control-next {
+  position: relative;
+  top: 50%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
-.controls .btn-primary:hover {
-  border-radius: 50% !important;
-  background-color: #ffffff !important;
-  border: #ffffff solid 1px;
-  color: #ff6200;
+.control-prev:hover,
+.control-next:hover {
+  background-color: #fafafa;
 }
+
 
 .Philippines {
   margin-top: 60px;
   text-align: justify;
   justify-content: center;
 }
+
 .Philippines p {
   font-size: larger;
   text-align: justify;
   justify-content: center;
   margin: 150px 380px -40px;
 }
+
 .Philippines #phID {
   font-size: 220px;
   text-align: justify;
@@ -219,6 +252,7 @@ p {
   color: transparent;
   width: 100% !important;
 }
+
 .Joinbutton {
   margin: 160px 410px -40px;
   background-color: #ff6200;
@@ -239,6 +273,7 @@ p {
   padding: 40px;
   text-align: left !important;
 }
+
 .card-img-top {
   width: 100px;
   height: auto;
@@ -251,6 +286,7 @@ p {
   margin-left: 2%;
   position: relative;
 }
+
 .Services h2:before {
   content: "";
   position: absolute;
@@ -268,16 +304,20 @@ p {
   margin-left: 2%;
   margin: 0.5% 0% 2% 2%;
 }
+
 .Services .card-text {
   text-align: center !important;
   width: 100%;
 }
+
 .carousel-inner {
   padding: 20px 0;
 }
+
 .mission-vision {
   padding: 3rem 0;
 }
+
 .mission-vision h2 {
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -306,6 +346,13 @@ p {
   text-align: left;
 }
 
+.horizontal-line {
+  width: 25%;
+  height: 6px;
+  background: #ff6200;
+  border-radius: 20px;
+}
+
 #first,
 #second,
 #third,
@@ -313,28 +360,57 @@ p {
 #second .row,
 #third .row {
   padding: 1.3%;
+  border-radius: 10px;
 }
 
 #first img,
 #second img,
 #third img {
   border-radius: 5%;
+  transition: transform 0.3s ease;
 }
 
 #first p,
 #second p,
 #third p {
   color: black;
+  transition: color 0.3s ease;
 }
 
+#first h3,
+#second h3,
+#third h3 {
+  color: black;
+  transition: color 0.3s ease;
+}
 
 #first .row:hover,
 #second .row:hover,
 #third .row:hover {
   background-color: #ff6200;
-  color: black;
+  color: white;
 }
 
+#first .row:hover img,
+#second .row:hover img,
+#third .row:hover img {
+  transform: scale(1.1);
+}
+
+#first .row:hover h3,
+#second .row:hover h3,
+#third .row:hover h3,
+#first .row:hover p,
+#second .row:hover p,
+#third .row:hover p {
+  color: white;
+}
+#first .row:hover .horizontal-line,
+#second .row:hover .horizontal-line,
+#third .row:hover .horizontal-line {
+  background: white;
+  transition: all 0.3s ease;
+}
 
 .switch {
   width: 90px !important;
@@ -497,7 +573,7 @@ p {
   transform: translateY(-10px);
 }
 
-#team{
+#team {
   margin-top: -5%;
   padding: 20px;
   background-color: #bbbbbb93;
@@ -535,4 +611,79 @@ p {
   width: 326px;
   height: 330px;
   justify-items: center;
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.faq-subtitle {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.ask-btn {
+  background-color: #f58220;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.faq-question {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 10px 0;
+  position: relative;
+}
+
+.faq-question:focus {
+  outline: none;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+.icon-plus {
+  position: absolute;
+  right: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f58220;
+}
+
+.icon-close {
+  position: absolute;
+  right: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f58220;
+}
+
+.faq-question.active .icon-plus {
+  display: none;
+}
+
+.faq-question.active .icon-close {
+  display: inline;
 }

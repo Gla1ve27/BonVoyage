@@ -1,3 +1,7 @@
+<!-- <?php
+include('header.html');
+include('footer.html');
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,27 +93,34 @@
   </div>
 
   <div class="container">
-    <div class="VacationItineraries">
-      <div class="text-box">
-        <h2 id="controlled-title">
-          Affordable Vacations and Itineraries in the Philippines
-        </h2>
-        <p id="controlled-description">
-          Bon Voyage offers affordable vacations and meticulously crafted
-          itineraries in the Philippines, making it easy for travelers to
-          explore this stunning archipelago without breaking the bank.
-        </p>
-        <div class="controls">
-          <button class="btn btn-primary" onclick="">‹</button>
-          <button class="btn btn-primary" onclick="">›</button>
+    <div id="vacationCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-title="Affordable Vacations and Itineraries in the Philippines" data-description="Bon Voyage offers affordable vacations and meticulously crafted itineraries in the Philippines, making it easy for travelers to explore this stunning archipelago without breaking the bank.">
+          <div class="image-box">
+            <img src="assets/backgrounds/bg-palawan.jpg" alt="Palawan">
+          </div>
+        </div>
+        <div class="carousel-item" data-title="Discover Breathtaking Views in Batanes" data-description="Join Bon Voyage for a trip to Batanes Islands, and experience the unique beauty of tropical landscape treasures.">
+          <div class="image-box">
+            <img src="assets/backgrounds/batanes.jpg" alt="Batanes">
+          </div>
+        </div>
+        <div class="carousel-item" data-title="Explore the Mactan" data-description="Immerse yourself in the rich history and modern wonders of Mactan, Cebu with Bon Voyage's expertly planned tours and itineraries.">
+          <div class="image-box">
+            <img src="assets/backgrounds/mactan.jpg" alt="Mactan">
+          </div>
         </div>
       </div>
-      <div class="image-box">
-        <img id="controlled-img" src="assets/backgrounds/bg-palawan.jpg" />
-      </div>
-
     </div>
-  </div>
+    <div class="text-box">
+      <h2 class="title">Affordable Vacations and Itineraries in the Philippines</h2>
+      <p class="descript">
+        Bon Voyage offers affordable vacations and meticulously crafted itineraries in the Philippines, making it easy for travelers to explore this stunning archipelago without breaking the bank.
+      </p>
+      <button class="control-prev" type="button" data-bs-target="#vacationCarousel" data-bs-slide="prev">&lsaquo;</button>
+      <button class="control-next" type="button" data-bs-target="#vacationCarousel" data-bs-slide="next">&rsaquo;</button>
+    </div>
+    </div>
 
   <div class="container">
     <div class="Philippines">
@@ -212,6 +223,7 @@
         </div>
         <div class="col-sm">
           <h3> Bon Voyager's Mission </h3>
+          <div class="horizontal-line"></div>
         </div>
         <div class="col-sm">
           <p>Our mission is to connect travelers with affordable and memorable tours
@@ -230,6 +242,7 @@
         </div>
         <div class="col-sm">
           <h3> Bon Voyager's Vision </h3>
+          <div class="horizontal-line"></div>
         </div>
         <div class="col-sm">
           <p>
@@ -250,6 +263,7 @@
         </div>
         <div class="col-sm">
           <h3> Bon Voyager's Core Values </h3>
+          <div class="horizontal-line"></div>
         </div>
         <div class="col-sm">
           <p>
@@ -300,6 +314,8 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+
     <input id="toggleswitch" type="checkbox" data-toggle="switchbutton" checked data-onlabel="Joiners"
       data-offlabel="Host" data-onstyle="success" data-offstyle="danger">
   </div>
@@ -420,7 +436,7 @@
         </div>
         <div class="team-card">
           <div class="developers">
-            <img src="assets/images/" class="card-img-top developers" id="developers" alt="Louise Angello Cabana">
+            <img src="assets/images/Gello.jpg" class="card-img-top developers" id="developers" alt="Louise Angello Cabana">
             <div class="card-body"  id="team">
               <h5 class="card-title fw-bold">Louise Angello Cabana</h5>
               <p class="text-muted mb-0">Frontend-Backend Developer</p>
@@ -443,6 +459,65 @@
       </div>
     </div>
 
+    <div class="container my-5">
+      <div class="row">
+          <div class="col-md-6">
+              <h2 class="faq-title">Frequently Asked Questions</h2>
+              <p class="faq-subtitle">Get answers to your questions and learn more about our services.</p>
+              <button class="btn btn-warning ask-btn">Ask a Question</button>
+          </div>
+  
+          <div class="col-md-6">
+              <div class="faq-list">
+                  <div class="faq-item">
+                      <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1">
+                          What are the advantages of booking or joining a tour through BonVoyage?
+                          <span class="icon-plus">+</span>
+                      </button>
+                      <div id="faq1" class="collapse">
+                          <div class="faq-answer">
+                              BonVoyage offers diverse types of vacations that you can imagine posted by different users. You can find your dream destinations at the cheapest price.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item">
+                      <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq2">
+                          Do the website offers a lot of vouchers and discounts?
+                          <span class="icon-plus">+</span>
+                      </button>
+                      <div id="faq2" class="collapse">
+                          <div class="faq-answer">
+                              Yes, we frequently offer exclusive discounts and vouchers for our users.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item">
+                      <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq3">
+                          How much is the cheapest vacation available on the website?
+                          <span class="icon-plus">+</span>
+                      </button>
+                      <div id="faq3" class="collapse">
+                          <div class="faq-answer">
+                              Prices can vary, but we have vacation packages starting from as low as $100.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item">
+                      <button class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq4">
+                          How can you tell that the website is secure?
+                          <span class="icon-plus">+</span>
+                      </button>
+                      <div id="faq4" class="collapse">
+                          <div class="faq-answer">
+                              Our website uses encryption to secure user data, and we comply with industry standards for online security.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
 
   <script>
     function hiddenmsg(id) {
@@ -453,6 +528,19 @@
         element.style.display = "none";
       }
     }
+  </script>
+  <script>
+const carouselTitle = document.querySelector('.title');
+const carouselDescription = document.querySelector('.descript');
+document.getElementById('vacationCarousel').addEventListener('slide.bs.carousel', function (event) {
+    const activeSlide = event.relatedTarget;
+    const newTitle = activeSlide.getAttribute('data-title');
+    const newDescription = activeSlide.getAttribute('data-description');
+
+    carouselTitle.textContent = newTitle;
+    carouselDescription.textContent = newDescription;
+});
+
   </script>
 </body>
 
