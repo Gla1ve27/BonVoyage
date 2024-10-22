@@ -1,8 +1,3 @@
-document.getElementById('nextButton').addEventListener('click', function() {
-    document.getElementById('step1').style.display = 'none';
-    document.getElementById('step2').style.display = 'flex';
-});
-
 var daysElement = document.getElementById('days');
 var monthDisplay = document.getElementById('month-display');
 var yearInput = document.getElementById('year-input');
@@ -90,47 +85,32 @@ function calculateAge(birthDate) {
     return age;
 }
 
+document.getElementById('nextButton').addEventListener('click', function() {
+    document.getElementById('step1').style.display = 'none';
+    document.getElementById('step2').style.display = 'grid';
+});
 
-document.addEventListener('DOMContentLoaded', function () {
-    const uploadContainer = document.getElementById('uploadContainer');
-    const fileInput = document.getElementById('uploadId');
-
-    uploadContainer.addEventListener('dragover', function (e) {
-        e.preventDefault(); 
-        e.stopPropagation(); 
-        uploadContainer.classList.add('drag-over'); 
-    });
-
-    uploadContainer.addEventListener('dragleave', function () {
-        uploadContainer.classList.remove('drag-over'); 
-    });
-
-    uploadContainer.addEventListener('drop', function (e) {
-        e.preventDefault(); 
-        e.stopPropagation();
-        uploadContainer.classList.remove('drag-over'); 
-
-        const files = e.dataTransfer.files;
-        if (files.length > 0) {
-            fileInput.files = files;
-            console.log(files[0].name);
-            alert(`Uploaded: ${files[0].name}`);
-        }
-    });
-
-    fileInput.addEventListener('change', function () {
-        const fileName = fileInput.files[0].name; 
-        console.log(fileName); 
-        alert(`Selected: ${fileName}`); 
-    });
+document.getElementById('prevButton').addEventListener('click', function() {
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step1').style.display = 'grid';
 });
 
 document.getElementById('nextButton1').addEventListener('click', function() {
     document.getElementById('step2').style.display = 'none';
-    document.getElementById('step3').style.display = 'flex';
+    document.getElementById('step3').style.display = 'grid';
+});
+
+document.getElementById('prevButton1').addEventListener('click', function() {
+    document.getElementById('step3').style.display = 'none';
+    document.getElementById('step2').style.display = 'grid';
 });
 
 document.getElementById('terms').addEventListener('click', function() {
     document.getElementById('step3').style.display = 'none';
     document.getElementById('termsandcondition').style.display = 'flex';
+});
+
+document.getElementById('exit1').addEventListener('click', function() {
+    document.getElementById('step3').style.display = 'grid';
+    document.getElementById('termsandcondition').style.display = 'none';
 });
