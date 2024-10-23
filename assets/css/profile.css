@@ -1,0 +1,125 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+.fb-profile-block {
+    margin: auto;
+    position: relative;
+    width: 100%;
+  }
+  .cover-container{
+      background: #1E90FF;
+      background: -webkit-radial-gradient(bottom, #73D6F5 12%, #1E90FF);
+      background: radial-gradient(at bottom, #73D6F5 12%, #1E90FF);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  .fb-profile-block-thumb{
+    display: block;
+    height: 315px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .profile-img a{
+    bottom: -110px;
+    box-shadow: none;
+        display: block;
+    left: 50px;
+    padding: 1px;
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    z-index: 9;
+  }
+  .profile-img img {
+    background-color: #fff;
+    height:200px;
+    padding: 5px;
+    width:200px;
+    border: 2px solid black;    
+    border-radius: 50%;
+  }
+  .profile-name {
+    bottom: -114px;
+    left: 280px;
+    position: absolute;
+  }
+  .profile-name h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+    max-width: 275px;
+    position: relative;
+  }
+  .profile-name p {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    color: black;
+    font-size: 16px;
+    max-width: 300px;
+    position: relative;
+  }
+
+  .leftside-bio{
+    margin-top: 15%;
+    max-width: 100%;
+    margin-left: 0%;
+    display:run-in;
+
+    .Bio {
+        border: 1px solid grey;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 2%; 
+        width: 40%;
+    }
+    .AboutMe {
+        margin-top: 1%;
+        border: 1px solid grey;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 2%; 
+        width: 40%;
+    }
+    .AboutMe h2{
+        text-align: left;
+        font-weight: 1000;
+        font-size: 24px;
+    }
+    .Friends{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border: 1px solid grey;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 2%; 
+        width: 40%;
+    }
+      .col-md-4 img{
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+            object-fit:cover;
+   }
+   .input-group {
+    max-width: 40%;
+   }
+   .input-group i {
+    color: #ff6200;
+    font-size: 25px;
+   }
+}
+
+.rightside{
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  display:run-in;
+
+  .posts{
+    border: 1px solid grey;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    width: 58%;
+    margin-left: -8%;
+  }
+}
