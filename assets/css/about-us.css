@@ -274,12 +274,6 @@ p {
   text-align: left !important;
 }
 
-.card-img-top {
-  width: 100px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
 .Services h2 {
   text-align: left !important;
   margin-bottom: -10px !important;
@@ -310,6 +304,13 @@ p {
   width: 100%;
 }
 
+.servicecard {
+  height: 400px;
+}
+.servicecard img {
+  height: 300px;
+  width: 300px;
+}
 .carousel-inner {
   padding: 20px 0;
 }
@@ -686,4 +687,71 @@ p {
 
 .faq-question.active .icon-close {
   display: inline;
+}
+
+.slider {
+  margin: 25px 0 0 200px;
+  width: 70%;
+  padding: 3%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slider img {
+  width: 28%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid white;
+  transition: all ease-in-out 0.5s;
+}
+
+.slider #primary {
+  width: 100%; 
+}
+
+.slider #primary:hover::before {
+  width: 100%;
+}
+
+.slider #primary::after {
+  width: 100%;
+}
+
+.slider img:hover{
+  width: 80%;
+}
+
+.slider:not(#primary):hover #primary {
+  width: 28%; 
+}
+
+.toggle{
+  height: 30px;
+  margin-top: 15px;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  
+}
+
+.servicecard {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 20px;
+}
+
+.servicecard img {
+  width: 50%;
+}
+
+.cardbody, 
+.cardbody p{ 
+  text-align: center;
+  justify-items: center;
 }
