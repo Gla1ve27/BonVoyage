@@ -1,125 +1,285 @@
 *{
     font-family: "Inter", sans-serif;
 }
-.fb-profile-block {
-    margin: auto;
-    position: relative;
-    width: 100%;
-  }
-  .cover-container{
-      background: #1E90FF;
-      background: -webkit-radial-gradient(bottom, #73D6F5 12%, #1E90FF);
-      background: radial-gradient(at bottom, #73D6F5 12%, #1E90FF);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  .fb-profile-block-thumb{
-    display: block;
-    height: 315px;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-  .profile-img a{
-    bottom: -110px;
-    box-shadow: none;
-        display: block;
-    left: 50px;
-    padding: 1px;
-    position: absolute;
-    height: 160px;
-    width: 160px;
-    z-index: 9;
-  }
-  .profile-img img {
-    background-color: #fff;
-    height:200px;
-    padding: 5px;
-    width:200px;
-    border: 2px solid black;    
-    border-radius: 50%;
-  }
-  .profile-name {
-    bottom: -114px;
-    left: 280px;
-    position: absolute;
-  }
-  .profile-name h2 {
-    color: black;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 30px;
-    max-width: 275px;
-    position: relative;
-  }
-  .profile-name p {
-    margin-top: 0%;
-    margin-bottom: 2%;
-    color: black;
-    font-size: 16px;
-    max-width: 300px;
-    position: relative;
-  }
 
-  .leftside-bio{
-    margin-top: 15%;
-    max-width: 100%;
-    margin-left: 0%;
-    display:run-in;
-
-    .Bio {
-        border: 1px solid grey;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        padding: 2%; 
-        width: 40%;
-    }
-    .AboutMe {
-        margin-top: 1%;
-        border: 1px solid grey;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        padding: 2%; 
-        width: 40%;
-    }
-    .AboutMe h2{
-        text-align: left;
-        font-weight: 1000;
-        font-size: 24px;
-    }
-    .Friends{
-        margin-top: 1%;
-        margin-bottom: 1%;
-        border: 1px solid grey;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        padding: 2%; 
-        width: 40%;
-    }
-      .col-md-4 img{
-            border-radius: 10px;
-            width: 100px;
-            height: 100px;
-            object-fit:cover;
-   }
-   .input-group {
-    max-width: 40%;
-   }
-   .input-group i {
-    color: #ff6200;
-    font-size: 25px;
-   }
+body {
+  overflow-x: hidden;
 }
 
-.rightside{
+.container.head {
+  position: relative;
+}
+
+.cover-photo{
+  background-color: #007bff; 
+  height: 300px;
+  width: 100%;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.change-cover-btn {
   position: absolute;
-  left: 50%;
-  top: 56%;
-  display:run-in;
-
-  .posts{
-    border: 1px solid grey;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    padding: 2%;
-    width: 58%;
-    margin-left: -8%;
-  }
+  right: 20px;
+  bottom: 20px;
+  background-color: #fff;
+  color: #007bff;
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
 }
+
+.display-picture {
+  position: absolute;
+  top: 235px;
+  left: 35px;
+  width: 156px;
+  height: 160px;
+}
+
+.display-picture img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.profile-name {
+  position: absolute;
+  top: 305px;
+  left: 210px;
+}
+
+.profile-name h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-name p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.profile-actions {
+  position: absolute;
+  top: 315px;
+  right: 20px;
+}
+
+.message-btn, .add-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.message-btn {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.add-btn {
+  background-color: #ff6200;
+  color: white;
+}
+
+.main {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+
+    
+  .leftside-bio {
+        flex: 1;
+    }
+
+    .Bio, .AboutMe, .Friends {
+        width: 500px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        padding-bottom: 0px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    .AboutMe h3, .Friends h3 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .friends-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 5px;
+  }
+
+    .bonfriends{
+      align-items: center;
+      
+      .col-md-4 p {
+          text-align: left;
+          margin-top: 5px;
+          font-size: 10px;
+          font-weight: 800;
+      }
+  
+    }
+    
+    .findpeople .input-group {
+        max-width: 80%;
+    }
+
+    .input-group i {
+        color: #ff6200;
+        font-size: 25px;
+    }
+}
+ 
+.rightside {
+  flex: 2; 
+
+    .post-card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+      
+    .post-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+    
+    .profile-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .host-info h4 {
+      margin: 0;
+      font-size: 14px;
+    }
+    
+    .host-info p {
+      margin: 0;
+      font-size: 12px;
+      color: gray;
+    }
+    
+    .date {
+      font-size: 12px;
+      color: gray;
+    }
+    
+    .card-image {
+      position: relative;
+    }
+    
+    .card-image img {
+      width: 100%;
+      height: 100%  ;
+      object-fit: cover;
+    }
+    
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    
+    .prev-btn, .next-btn {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 25%;
+      width: 35px;
+      height: 35px;
+      margin: 20px;
+    }
+    
+    .people-count {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2px 8px;
+      border-radius: 15px;
+      font-size: 12px;
+    }
+    
+    .card-content {
+      padding: 15px;
+    }
+    
+    .card-content h3 {
+      font-size: 18px;
+      color: #ff6200;
+      margin: 0 0 10px;
+    }
+    
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+    }
+    
+    .tour-action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+    }
+    
+    .info-btn {
+      font-size: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #ff6200;
+    }
+    
+    .join-btn {
+      padding: 8px 15px;
+      background-color: #ff6200;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .join-btn:hover {
+      background-color: #e55b00;
+    }  
+}
+
