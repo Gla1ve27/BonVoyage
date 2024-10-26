@@ -102,6 +102,8 @@ body {
     
   .leftside-bio {
         flex: 1;
+        position: sticky;
+        top: -53px;
     }
 
     .Bio, .AboutMe, .Friends {
