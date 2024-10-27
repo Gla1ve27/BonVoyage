@@ -1,0 +1,351 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  .irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .main-container{
+    background-color: rgb(114, 114, 90);
+  }
+  .container{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+  }
+  
+  .search-bar-container {
+    background-color: darkorange;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 110%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional for better look */
+  }
+
+  .search-bar {
+    margin-left: 10%;
+    position: relative;
+    display: flex;
+    width: 80%;
+  }  
+
+  .search-bar-container h1 {
+    font-family: 'Irish Grover';
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 8%;
+    left: 10px; /* Adjust as needed */
+    pointer-events: none; /* Prevents the icon from blocking input */
+    font-size: 20px; /* Adjust size as needed */
+  }
+  .form-control {
+  padding-left: 40px; /* Make space for the icon */
+  width: 100%; /* Full width */
+  height: 40px; /* Adjust height as needed */
+  border-radius: 5px; /* Optional: round the corners */
+  }
+  
+/* CAT MENU */ /* CAT MENU *//* CAT MENU *//* CAT MENU *//* CAT MENU *//* CAT MENU *//* CAT MENU */
+/* CAT MENU *//* CAT MENU *//* CAT MENU *//* CAT MENU *//* CAT MENU *//* CAT MENU *//* CAT MENU */
+.scroll-host-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This will push the button to the right */
+  width: 100%; /* Make the container span the full width */
+}
+
+/* Container for smooth scrolling and buttons */
+.scroll-container {
+    flex: 1;
+    position: relative;
+    width: 70%;
+    padding: 0 3% 0 3%;
+    max-width: 1200px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+/* Wrapper for horizontal scrolling */
+.icon-menu-wrapper {
+    overflow-x: hidden;
+    display: flex;
+    flex: 1;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+/* Hide scrollbar on Chrome, Safari */
+.icon-menu-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Icon menu settings */
+.icon-menu {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    white-space: nowrap; /* Ensure buttons stay in a single line */
+}
+
+/* Ensure buttons and images are the same size */
+.cat-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 0px solid #ddd;
+    border-radius: 10px;
+    width: 60px; /* Set width for uniformity */
+    height: 60px; /* Set height for uniformity */
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* For hover effect */
+}
+
+.cat-btn img {
+    width: 40px; /* Ensure images are the same size */
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Hover effect for the buttons */
+.cat-btn:hover {
+    background-color: #dbdbdb; /* Change background on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    cursor: pointer;
+}
+
+.cat-btn p {
+    margin: 0;
+    font-size: 10px;
+}
+
+/* Styling for left and right buttons */
+.scroll-btn {
+    background-color: transparent;
+    color: rgb(7, 7, 7);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border-color: transparent;
+}
+.scroll-btn:hover { 
+    background-color: darkorange;
+    border: white;
+}
+
+#scroll-left {
+    left: 0;
+}
+
+#scroll-right {
+    right: 0;
+}
+
+/* Change cursor to grabbing when active */
+.icon-menu-wrapper.grabbing {
+    cursor: grabbing;
+}
+
+/* END OF CAT BUTTONS */
+/* END OF CAT BUTTONS */
+/* END OF CAT BUTTONS */
+
+.host-trip-container {
+  flex-shrink: 0; /* Prevent the button container from shrinking */
+  width: auto; /* Adjust based on content */
+  margin-left: 20px; /* Add some space between the scroll container and button */
+}
+
+.host-trip-btn {
+	box-shadow: -3px 3px 4px 0px #899599;
+  background-color: white;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:darkorange;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:8px 26px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.host-trip-btn:hover {
+  background-color: darkorange;
+  color: white;
+  transition: background-color 0.5s ease, transform 0.3s ease; 
+}
+.host-trip-btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* cards css */
+/* cards css */
+/* cards css */
+
+.dashboard-col{
+  margin-top: 5%;
+}
+
+/* Wrapper for horizontal scrolling */
+.trip-row-wrapper {
+  position: relative;
+  align-items: center;
+  width: 100%; /* Span full width of parent container */
+}
+
+/* Hide scrollbar on Chrome, Safari */
+.trip-row-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Icon menu settings */
+.trip-row {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+
+.cards-row::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-row {
+  width: 1000px;
+  display: flex;
+  gap: 30px;  
+  scroll-behavior: smooth; 
+  transition: transform 0.3s ease-in-out; /* Smooth scrolling effect */
+  white-space: nowrap; /* Keeps the cards in a single row */
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent shrinking when scrolling */
+}
+
+.card-container{
+  width: 210px;
+  white-space: nowrap; /* Allow text to wrap normally */
+  text-overflow: ellipsis
+}
+.card-info{
+  white-space: nowrap;
+  width: 210px;
+  overflow: hidden; 
+  text-overflow: ellipsis
+}
+.card {
+  width: 205px;
+  flex-shrink: 0; /* Prevent shrinking when scrolling */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.card:hover {
+  .card-btn {
+    opacity: 1;
+  }
+}
+#price {
+  color: darkorange;
+}
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-indicators .active {
+  background-color: darkorange;
+}
+
+.card-btn{
+  background-color: rgba(231, 228, 228, 0.87);
+  color: rgb(71, 69, 69);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border-color: transparent;
+  font-size: 10px;
+  opacity: 0;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+.card-btn:hover { 
+  background-color: darkorange;
+  border: white;
+}
+
+#card-btn-left {
+  left: 0;
+}
+
+#card-btn-right {
+  right: 0;
+}
+
+.row-btn{
+  height: 40px;
+  width: 45px;
+  background-color: transparent;
+  border: white;
+  border-radius: 100px;
+  color: #6d6868;
+  font-weight: bold;
+  font-size: 20px;
+}
+.row-btn:hover { 
+  background-color: darkorange;
+  color: white;
+}
+
+#row-btn-left {
+  left: 0;
+}
+
+#row-btn-right {
+  right: 0;
+}
