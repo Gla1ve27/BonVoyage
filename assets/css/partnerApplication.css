@@ -1,0 +1,283 @@
+*{
+    font-family: "Inter";
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: .7fr .3fr;
+    padding-bottom: 80px;
+    gap: 20px;
+    max-height: 920px;
+}
+
+.buttonContainer{
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    font-size: 15px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.buttonContainer button {
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+
+.prevBtn {
+    background-color: transparent;
+}
+
+.nextBtn {
+    background-color: rgb(250, 95, 38);
+    color: white;
+    font-weight: bold;
+}
+
+.create {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    width: 150px;
+}
+
+.upperLabelAddress{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.upperLabelAddress div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lowerPart {
+    display: grid;
+    grid-template-columns: .25fr .75fr;
+    gap: 25px;
+}
+
+.logoUpload {
+    position: relative;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px rgb(231, 230, 230) solid;
+}
+
+.otherComapanyWraper{
+    display: flex;
+    flex-direction: row;
+}
+
+.otherComapanyDetails {
+    margin-top: 10px;
+}
+
+.compWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.compWrapper i {
+    font-size: 25px;
+    color: orangered;
+}
+
+.accountCreation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.accountCreation div {
+    width: 50% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.accountCreation input {
+    width: 100%;
+}
+
+.compWrapper select {
+    flex: 1;
+    padding: 10px 20px;
+    border: 1px rgb(209, 208, 208) solid;
+    border-radius: 10px;
+}
+
+.logoUpload label {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoUpload label img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.logoUpload p {
+    text-align: center;
+}
+
+.companyLogoDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoUpload input{
+    position: absolute;
+    display: none;
+}
+
+.sameLabel {
+    color: rgb(121, 120, 120);
+    font-size: 14px;
+}
+
+.companyInfoDiv {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    height: 50px;
+    width: 50px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stepCount {
+    padding: 3px 20px;
+    background-color: rgb(250, 193, 172);
+    font-size: 20px;
+    color: orangered;
+    border-radius: 50px;
+    font-weight: bolder;
+}
+
+.stepTitle {
+    margin-top: 80px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(73, 73, 73);
+}
+
+.name div,
+.ageGender div,
+.homeAddress div,
+.emailPhone div {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.ageGender {
+    display: grid;
+    grid-template-columns: 1.4fr 80px 1.4fr;
+    gap: 30px;
+}
+
+.emailPhone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.homeAddress{
+    display: flex;
+    flex-direction: column;
+}
+
+.ageGender label {
+    margin: 10px 0px;
+    margin-top: 25px;
+}
+
+.homeAddress label {
+    margin: 10px 0px;
+    margin-top: 25px;
+}
+
+.stepTitle p {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(148, 148, 148);
+}
+
+input[type=text],
+input[type=date] {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px rgba(0, 0, 0, 0.158) solid;
+}
+
+.name label {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: rgb(168, 166, 166);
+}
+
+
+.img-container{
+    margin: 0px 20px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 300px 100px 10px 10px;
+}
+
+.title h3 {
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: bolder;
+    margin-left: 10px;
+}

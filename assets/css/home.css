@@ -1,0 +1,133 @@
+.post-card-container {
+    flex: 2; 
+  
+      .post-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+        
+      .post-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+      }
+      
+      .profile-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      
+      .host-info h4 {
+        margin: 0;
+        font-size: 14px;
+      }
+      
+      .host-info p {
+        margin: 0;
+        font-size: 12px;
+        color: gray;
+      }
+      
+      .date {
+        font-size: 12px;
+        color: gray;
+      }
+      
+      .card-image {
+        position: relative;
+      }
+      
+      .card-image img {
+        width: 100%;
+        height: 100%  ;
+        object-fit: cover;
+      }
+      
+      .carousel-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+      }
+      
+      .prev-btn, .next-btn {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 25%;
+        width: 35px;
+        height: 35px;
+        margin: 20px;
+      }
+      
+      .people-count {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+      }
+      
+      .card-content {
+        padding: 15px;
+      }
+      
+      .card-content h3 {
+        font-size: 18px;
+        color: #ff6200;
+        margin: 0 0 10px;
+      }
+      
+      .card-content p {
+        font-size: 14px;
+        color: #555;
+      }
+      
+      .tour-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+      }
+      
+      .info-btn {
+        font-size: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #ff6200;
+      }
+      
+      .join-btn {
+        padding: 8px 15px;
+        background-color: #ff6200;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .join-btn:hover {
+        background-color: #e55b00;
+      }  
+  }
+ 

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonVoyage.com</title>
+    <!-- Website Icon -->
+    <link rel="shortcut icon" href="assets/Logo/BonVoyage - Square Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="itineraries.css">
+    <link rel="stylesheet" href="ageneral.css">
+
+    <!-- Bootstrap Import Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Importat link of Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+
+    <!-- Boxicon imports -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/Logo/BonVoyage - Long Logo.png" alt="BonVoyageLogo" class="logo-image"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-3 pt-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/landing.html">Home</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" aria-current="page" href="#">Destination and Itineraries</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" aria-current="page" href="/about-us.html">About Us</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" aria-current="page" href="/partnership.html">Partners</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" aria-current="page" href="/contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item"></li>
+                <a class="nav-link" aria-current="page" href="/registration.html">Sign up</a>
+            </li>
+            <li class="nav-item"></li>
+                <button class="Login-btn nav-link" aria-current="page" href="#">Log in</button>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Itineraries Main Content -->
+    <div class="container main-content">
+        <section class="first-section" data-aos="fade-up">
+            <div class="description">
+                <h1>WORRY LESS ABOUT YOUR BUDGET</h1>
+                <p>Find the best the perfect vacation and itineraries this company has to   offer based on your budget.
+                    At VonVoyage, we believe that travel is not just about reaching a destination—it's about the experiences, the connections, and the memories you create along the way. Our comprehensive range of services is designed to cater to every type of traveler, ensuring that your journey is seamless and extraordinary.</p>
+                <h4 class="mt-4">ADJUST, LOOK, FIND and ENJOY</h4>
+                <p>Embrace every journey with flexibility, curiosity, exploration, and joy. Adjust your plans as needed, look for new perspectives, find hidden gems, and ultimately enjoy every moment!</p>
+            </div>
+            <div class="budget-filter">
+                <div class="filter-container">
+                    <h5 class="mt-2">FIND THE BEST VACATION THAT SUITS YOU</h5>
+                    <div class="valueContainer">
+                        <div class="slider-value">
+                            <span class="slideVal">100</span>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <p class="lower-price">500</p>
+                        <input type="range" min="500" max="50000" value="500" steps="1" class="price-slider">
+                        <p class="higher-price">50,000</p>
+                    </div>
+                    <p class="lower-title">Tell us your budget</p>
+                    <div class="input-container1">
+                        <div class="text-price-input">
+                            <div class="p-input-div">
+                                <p style="margin: 0px; position: absolute; left: 10px; top: 8px; font-family: 'Inter'; font-size: 17px;">₱</p>
+                                <input type="text" placeholder="Type in your budget" value="500" class="text-budget">
+                            </div>
+                            <button class="filter-budget-btn">Enter</button>
+                        </div>
+                        <div class="display-price-container">
+                            <p>Your budget is</p>
+                            <span class="budget-text">₱500</span>
+                        </div>
+                    </div>
+                    <div class="region-selector">
+                        <div>
+                            <p>Select your region</p>
+                            <select name="region" id="region" class="region-list">
+                                <option class="dropdown-item" value="0">Choose Region</option>
+                                <option class="dropdown-item" value="NCR">NCR</option>
+                                <option class="dropdown-item" value="CAR">CAR</option>
+                                <option class="dropdown-item" value="RI">Region I</option>
+                                <option class="dropdown-item" value="RII">Region II</option>
+                                <option class="dropdown-item" value="RIII">Region III</option>
+                                <option class="dropdown-item" value="RIVA">Region IV-A</option>
+                                <option class="dropdown-item" value="RIVB">Region IV-B</option>
+                                <option class="dropdown-item" value="RV">Region V</option>
+                                <option class="dropdown-item" value="VI">Region VI</option>
+                                <option class="dropdown-item" value="VII">Region VII</option>
+                                <option class="dropdown-item" value="VIII">Region VIII</option>
+                                <option class="dropdown-item" value="IX">Region IX</option>
+                            </select>
+
+                            <div class="typeOfJoiner-radios">
+                                <p class="mb-2 mt-3">What kind of travel</p>
+
+                                <label for="soloRadio" class="me-3">
+                                    <input type="radio" name="travelType" id="soloRadio" value="solo">
+                                    <span>Solo</span>
+                                </label>
+                                
+                                <label for="groupRadio">
+                                    <input type="radio" name="travelType" id="groupRadio" value="group">
+                                    <span>Group/Barkada</span>
+                                </label>
+    
+                            </div>
+                        </div>
+
+                        <div class="destination-radios">
+                            <p>Travel to:</p>
+                            
+                            <label for="loc1">
+                                <input type="radio" name="travelLocation" id="loc1" value="luzon">
+                                <span>Luzon, Philippines</span>
+                            </label>
+
+                            <label for="loc2">
+                                <input type="radio" name="travelLocation" id="loc2" value="visayas">
+                                <span>Visayas, Philippines</span>
+                            </label>
+
+                            <label for="loc3">
+                                <input type="radio" name="travelLocation" id="loc3" value="mindanao">
+                                <span>Mindanao, Philippines</span>
+                            </label>
+
+                            <label for="loc4">
+                                <input type="radio" name="travelLocation" id="loc4" value="any where">
+                                <span>Anywhere in the Philippines</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="pax-container">
+                        <div>
+                            <p>How many person/s?</p>
+                            <div>
+                                <input type="number" class="pax-input">
+                                <i class='bx bx-user person-icon' style='color:#ff4d00'></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="radio-tile-group">
+                                <div class="input-container">
+                                    <input id="hike" type="radio" name="category">
+                                    <div class="radio-tile">
+                                        <i class='bx bx-landscape'></i>
+                                        <label for="hike">Hike</label>
+                                    </div>
+                                </div>
+
+                                <div class="input-container">
+                                    <input id="city" type="radio" name="category">
+                                    <div class="radio-tile">
+                                        <i class='bx bx-buildings'></i>
+                                        <label for="city">City</label>
+                                    </div>
+                                </div>
+
+                                <div class="input-container">
+                                    <input id="thrill" type="radio" name="category">
+                                    <div class="radio-tile">
+                                        <i class='bx bx-cable-car'></i>
+                                        <label for="thrill">Thrill</label>
+                                    </div>
+                                </div>
+
+                                <div class="input-container">
+                                    <input id="any" type="radio" name="category">
+                                    <div class="radio-tile">
+                                        <i class='bx bx-trip'></i>
+                                        <label for="any">Any</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button class="host-btn">Host a Tour</button>
+                        <button class="find-btn">Find Tours</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="displayTour" data-aos="fade-up">
+            <h4>Available Perfect Vacation in</h4>
+            <h1>Visayas Region, Philippines</h1>
+
+            <div class="tourDashboard" data-aos="fade-up">
+
+                <div class="tour-container" >
+                    <div style="background-image: url('assets/tourImages/chocolate-hills-bohol.jpg');" class="tour-img"></div>
+                    <p>Chocolate Hills, Bohol Province</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/bahura-reefs-cebu.jpg');" class="tour-img"></div>
+                    <p>Bahura Reef, Cebu Province</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/san-joaquin-church-iloilo.png');" class="tour-img"></div>
+                    <p>San Juaquin Church, Iloilo</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/boracay-beach-aklan.jpg');" class="tour-img"></div>
+                    <p>Boracay Beach, Kalibo Aklan</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/mactan-shrine-cebu.jpg');" class="tour-img"></div>
+                    <p>Mactan Shrine, Cebu City</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/kawa-hotbath-.png');" class="tour-img"></div>
+                    <p>Kawa Hotbath, Tibiao</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/bugang-river-antique.jpg');" class="tour-img"></div>
+                    <p>Bugang River, Antique</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/rice-terraces-antique.jpg');" class="tour-img"></div>
+                    <p>Rice Terreces, Antique</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/aguinid-falls-samboan-cebu.jpg');" class="tour-img"></div>
+                    <p>Aguinid Falls, Samboan Cebu</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/kawasan-falls-oslob-ceby.jpg');" class="tour-img"></div>
+                    <p>Kawasan Falls, Oslob Cebu</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/Kanlaob\ Algeria\ River\,\ Cebu.jpg');" class="tour-img"></div>
+                    <p>Kanlaob Algeria River, Cebu</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/bohol-s-man-made-forest.jpg');" class="tour-img"></div>
+                    <p>Man-made Forest, Bohol Province</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+            </div>
+            <div class="load-btn-container">
+                <button class="loadMore">
+                    Load More
+                </button>
+            </div>
+
+            <h4 class="mt-5">Other Fun and Exciting</h4>
+            <h1>Personalized Recomendations</h1>
+
+            <div class="tourDashboard">
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/chocolate-hills-bohol.jpg');" class="tour-img"></div>
+                    <p>Chocolate Hills, Bohol Province</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/bahura-reefs-cebu.jpg');" class="tour-img"></div>
+                    <p>Bahura Reef, Cebu Province</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/san-joaquin-church-iloilo.png');" class="tour-img"></div>
+                    <p>San Juaquin Church, Iloilo</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/boracay-beach-aklan.jpg');" class="tour-img"></div>
+                    <p>Boracay Beach, Kalibo Aklan</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/mactan-shrine-cebu.jpg');" class="tour-img"></div>
+                    <p>Mactan Shrine, Cebu City</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/kawa-hotbath-.png');" class="tour-img"></div>
+                    <p>Kawa Hotbath, Tibiao</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/bugang-river-antique.jpg');" class="tour-img"></div>
+                    <p>Bugang River, Antique</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+
+                <div class="tour-container">
+                    <div style="background-image: url('assets/tourImages/rice-terraces-antique.jpg');" class="tour-img"></div>
+                    <p>Rice Terreces, Antique</p>
+                    <button class="joinTour-button">
+                        Join this tour
+                    </button>
+                </div>
+            </div>
+            <div class="load-btn-container">
+                <button class="loadMore">
+                    Load More
+                </button>
+            </div>
+
+            <h4 class="mt-5">Amazing and Adventurous</h4>
+            <h1 class="mb-5">Itineraries</h1>
+
+            <div class="itineraries-gallery">
+                <div class="gallery-column">
+                    <div class="photos">
+                        <img src="assets/itineraryImages/animal-feeding.jpg" alt="animalfeeding">
+                        <p>Animal Feeding</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/kayaking.jpg" alt="River Adventures">
+                        <p>River Adventures</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/aquariumpark.png" alt="Aquarium Parks">
+                        <p>Aquarium Parks</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/camping.jpg" alt="Camping">
+                        <p>Camping</p>
+                    </div> 
+                </div>
+                <div class="gallery-column">
+                    <div class="photos">
+                        <img src="assets/itineraryImages/clift diving.jpg" alt="Clift Diving">
+                        <p>Clift Diving</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/diving.jpg" alt="aquarium">
+                        <p>Scuba Diving</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/hiking.webp" alt="atv">
+                        <p>Mountain Hiking</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/jetski.jpg" alt="atv">
+                        <p>Ocean Adventures</p>
+                    </div>
+                </div>
+                <div class="gallery-column">
+                    <div class="photos">
+                        <img src="assets/itineraryImages/inflatables.jpg" alt="animalfeeding">
+                        <p>Inflatable Island</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/helmet-diving.jpg" alt="atv">
+                        <p>Sea Treking</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/paragliding.webp" alt="atv">
+                        <p>Paragliding</p>
+                    </div>
+                    <div class="photos">
+                        <img src="assets/itineraryImages/paragliding2.webp" alt="atv">
+                        <p>Parachuting</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-btn-container mt-4 mb-4">
+                <button class="loadMore">
+                    Load More
+                </button>
+            </div>
+        </section>
+    </div>
+    
+
+    <!-- Splash Screen -->
+     <div class="splash-container"></div>
+
+      <!-- Footer -->
+      <footer id="footer" class="footer" style="background-color: #fafafa;">
+        <div class="container footer-top" data-aos="fade-up">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-3 footer-links">
+                    <p class="col-title">Features</p>
+                    <ul>
+                        <li><a href="#">Custom Itineraries</a></li>
+                        <li><a href="#">Easy Booking</a></li>
+                        <li><a href="#">24/7 Support</a></li>
+                        <li><a href="#">Group Discounts</a></li>
+                        <li><a href="#">Flexible Payments</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 footer-links">
+                    <p class="col-title">Explore Trips</p>
+                    <ul>
+                        <li><a href="#">Beach Escapes</a></li>
+                        <li><a href="#">Mountain Adventures</a></li>
+                        <li><a href="#">Cultural Journeys</a></li>
+                        <li><a href="#">Family Trips</a></li>
+                        <li><a href="#">Weekend Getaways</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 footer-links">
+                    <p class="col-title">About BondVoyage</p>
+                    <ul>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Meet The Team</a></li>
+                        <li><a href="#">Join Our Community</a></li>
+                        <li><a href="#">Sustainability and Commitment</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-6 footer-links footer-link-4">
+                    <p class="col-title">Follow Us</p>
+                    <ul>
+                        <li><a href="#">Facebook </a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="credit d-flex justify-content-center">
+                <span><img class="footer-logo" src="/BondVoyage/assets/img/BondLogo.png" alt="">
+                    <span class="credit-text-1">BondVoyage - Travel made easy for everyone.</span>
+                </span>
+                <span class="credit-text-2">© 2024 BondVoyage. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    
+     <script>
+
+        // Script for the value range input
+        const slideValue = document.querySelector(".slideVal");
+        const inputSlider = document.querySelector(".price-slider");
+        const priceInput = document.querySelector(".text-budget");
+        const budgetText = document.querySelector(".budget-text");
+        const filterBtn = document.querySelector(".filter-budget-btn");
+        let percent = 0;
+
+
+        // function for entering value through text field.
+        filterBtn.addEventListener("click", ()=>{
+            let value = priceInput.value;
+
+            // condition in the filter section if the input is greater than 500
+            if(value < 500){
+                value = 500
+                alert("Your budget should be at least P500")
+                priceInput.value = value
+                inputSlider.value = value
+                slideValue.textContent = value
+                budgetText.textContent = "₱500" 
+            }
+            else{
+                priceInput.value = value;
+                budgetText.textContent = "₱" + value;
+                inputSlider.value = value;
+                slideValue.textContent = value;
+            }
+
+            // getting the percentage of the range input
+            percent = ((value/50000) * 100) + "%"
+            slideValue.style.left = percent;
+
+            //setting the color of the range input
+            inputSlider.style.background = 'linear-gradient(90deg, rgb(255, 77, 0)' + percent + ', rgb(204, 203, 203)' + percent + ')';
+
+            // show the value in range input for 2 seconds
+            slideValue.classList.add("show");
+
+            // remove the value in range after 2 seconds
+            setTimeout(()=>{
+                slideValue.classList.remove("show");
+            }, 2000)
+            
+        });
+
+        // showing the value of the range input
+        inputSlider.oninput = (()=>{
+            let value = inputSlider.value;
+            percent = ((value/50000) * 100) + "%"
+            slideValue.textContent = value;
+            slideValue.style.left = percent;
+            slideValue.classList.add("show");
+            //setting the initial value of the input field
+            priceInput.value = value;
+            //setting the value of p based on the user's input
+            budgetText.textContent = "₱" + value;
+            //setting the color of the range input
+            inputSlider.style.background = 'linear-gradient(90deg, rgb(255, 77, 0)' + percent + ', rgb(204, 203, 203)' + percent + ')';
+        });
+        inputSlider.onmouseleave = (() =>{
+            slideValue.classList.remove("show");
+        });
+
+        // Radio button functionality getting the value of radio group for kind of travel
+         const travelType = document.querySelectorAll("input[name='travelType']");
+         console.log(travelType);
+         const paxInput = document.querySelector(".pax-input");
+
+         travelType.forEach(travelType =>{
+            travelType.addEventListener("change", ()=>{
+                let selected = document.querySelector("input[name='travelType']:checked").value;
+                getElemetType(selected);
+            })
+        })
+
+      
+        // setting the number of pax function
+        function getElemetType (selected){
+            if(selected == "group"){
+                paxInput.disabled = false;
+                paxInput.value = 2;
+            }
+            else {
+                paxInput.disabled = true;
+                paxInput.value = 1;  
+            }
+        }
+
+        
+
+        //Generate Splash Screen 
+        const splashScreen = document.querySelector(".splash-container");
+        const mainContent = document.querySelector(".main-content");
+        const footer = document.querySelector(".footer");
+        const navbar = document.querySelector(".navbar");
+        
+        splashScreen.classList.add("d-block");
+        navbar.classList.add("d-none");
+        mainContent.classList.add("d-none");
+        footer.classList.add("d-none");
+        splashScreen.style.backgroundImage = "url('assets/gifs/splashs.gif')";
+        setTimeout(()=>{
+                splashScreen.classList.remove("d-block");
+                navbar.classList.remove("d-none");
+                mainContent.classList.remove("d-none");
+                footer.classList.remove("d-none");
+                splashScreen.style.backgroundImage = "";
+            }, 5100)
+            
+         /**
+         * Scroll top button
+         */
+        let scrollTop = document.querySelector('.scroll-top');
+
+        function toggleScrollTop() {
+            if (scrollTop) {
+            window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+            }
+        }
+        scrollTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        });
+     </script>
+</body>
+</html>

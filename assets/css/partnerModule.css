@@ -1,0 +1,834 @@
+.mainContainer{
+    display: grid;
+    grid-template-columns: 18% 1fr;
+    gap: 30px;
+}
+
+.sideMenu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.sideMenu img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sideMenu h5 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.location {
+    display: flex;
+    gap: 5px;
+}
+
+.location p {
+    margin: 0px;
+}
+
+.location i{
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+.ButtonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ButtonContainer button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+}
+
+.ButtonContainer button:hover {
+    background-color: rgba(255, 113, 61, 0.151);
+}
+
+.ButtonContainer button i {
+    font-size: 20px;
+    color: orangered;
+}
+
+.mainContent h3 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.mainContent h3 span {
+    font-weight: bold;
+    color: orangered;
+}
+
+.summaryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.summaryContainer h5 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.summaryInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.summaryInfo p{
+    margin: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.summaryInfo i {
+    font-size: 20px;
+}
+
+.sumcon{
+    background: rgb(251,146,60);
+    background: linear-gradient(180deg, rgba(251,146,60,1) 0%, rgba(240,98,0,1) 100%);
+    border-radius: 5px;
+    padding: 13px;
+    color: white;
+}
+
+.carContainer {
+    border: 1px solid rgb(190, 190, 190);
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    position: relative;
+    padding: 25px 10px;
+    border-radius: 8px;
+}
+
+
+.carAssignmentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carContainer p {
+    margin: 0px;
+}
+
+.carContainer h5 {
+    margin: 0px;
+}
+.carContainer h5 span {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.carInfo {
+    margin-bottom: 20px;
+}
+
+.carInfo p {
+    font-size: 15px;
+}
+
+.carPic {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.driverPicture {
+    position: absolute;
+    height: 45px !important;
+    width: 45px !important;
+    bottom: 10px;
+    right: 25px;
+    border-radius: 50px;
+    border: solid 2px #F06200;
+    cursor: pointer;
+}
+
+.driverInfoFocus {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    position: absolute;
+    background-color: white;
+    width: 680px;
+    height: 300px;
+    right: -670px;
+    top: -120px;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px rgb(194, 191, 191) solid;
+    padding: 20px;
+    gap: 15px;
+    background-image: url(assets/backgrounds/driver_bg.png);
+    visibility: hidden; 
+    position: absolute; 
+    transform-origin: bottom left; 
+    transform: scale(0.5); 
+    opacity: 0; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    z-index: 1;
+}
+
+.driverPicture:hover + .driverInfoFocus,
+.driverInfoFocus:hover{
+    visibility: visible; 
+    transform: scale(1); 
+    opacity: 1; 
+}
+.driver_img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.driver_img img {
+    object-fit: cover;
+    object-position: center;
+    height: 80% !important;
+    transform: scale(1) !important;
+    border-radius: 5px;
+}
+
+.driver_img {
+    width: 100%;
+    height: 100%;
+}
+
+.driverInfos {
+    position: relative;
+}
+
+.driverInfos .row {
+    font-size: 10px;
+}
+
+.driverInfos button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #F06200;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.driverInfos span {
+    font-size: 12px;
+}
+
+.driverInfos p {
+    font-weight: bold;
+}
+
+.detail {
+    font-weight: bold;
+}
+
+.driverPicture:hover {
+    transform: scale(1.5) !important;
+    opacity: 0.9;
+}
+
+.carPic img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+.driver_img p{
+    margin: 0px;
+    font-size: 13px;
+}
+
+.driverID {
+    font-weight: bold;
+    font-size: 17px !important;
+    line-height: 1;
+    margin-top: 10px !important;
+}
+
+.carInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 5px 38px;
+    border: none;
+}
+
+.reassignBtn {
+    background-color: #F06200;
+    color: rgb(252, 252, 252);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.removeBtn {
+    color: #F06200;
+    background-color: rgb(233, 230, 230);
+    font-size: 13px;
+}
+
+.driverRatings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.driverRatings p {
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.assignButContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.assignButContainer button {
+    background-color:#F06200 ;
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 8px 80px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+.driverInput input,
+.driverInput select {
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    outline: none;
+} 
+
+.driverInput p {
+    color: #333;
+    transition: color 0.3s ease; 
+    margin: 0px;
+}
+
+.driverInput:focus-within p {
+    color: #F06200;
+}
+
+.driverInput input:focus {
+    border-color: #F06200;
+}
+
+.driverInput select:focus {
+    border-color: #F06200; 
+}
+
+.selectWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc; /* Default border */
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff; /* Background of the dropdown */
+    transition: border-color 0.3s ease;
+}
+
+
+.selectWrapper i {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #888; 
+    transition: color 0.3s ease;
+}
+
+.selectWrapper select {
+    width: 100%; 
+    border: none; 
+    background: none;
+    font-size: 16px;
+    color: #333;
+    outline: none; 
+    padding-left: 5px; 
+}
+
+.selectWrapper:focus-within {
+    border-color: #F06200; 
+}
+
+.selectWrapper:focus-within i {
+    color: #F06200; 
+}
+
+.image-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.image-box:hover {
+    background-color: #f1f1f1;
+}
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* Default Image Box Styling */
+.image-box {
+    border: 2px dashed #ffcba9;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fffdfb;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.image-box:hover {
+    background-color: #ffeee0;
+}
+
+.previewImage {
+    max-width: 180px;
+    max-height: 180px;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+.previewImage2 {
+    max-height: 450px;
+}
+
+.image-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.addDriverBtn {
+    background-color: #F06200;
+    border: none;
+    color: white;
+    padding: 8px 50px;
+    font-weight: bold;
+}
+
+.chart-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.noDriverAvailable {
+    width: 100%;
+    background-color: #ff2600;
+    color: white;
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.noDriverAvailable i {
+    font-size: 30px !important;
+}
+
+.driverWrppers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.driverContainer {
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid rgb(226, 226, 226);
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.08);
+}
+
+.driverContainer p {
+    margin: 0px;
+}
+
+.driverContainer img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.driverName {
+    font-weight: bold;
+    color: #F06200;
+    font-size: 18px;
+}
+
+.viewDetails {
+    border: none;
+    padding: 5px;
+    transition: all 0.20s ease-in-out;
+    color: #F06200;
+}
+
+.viewDetails:hover{
+    background-color: #F06200;
+    color: white;
+}
+
+.driverContainer button {
+    font-size: 13px;
+}
+
+.removeBtn2 {
+    border: none;
+    padding: 5px;
+    transition: all 0.20s ease-in-out;
+    background-color: transparent;
+    font-weight: 300;
+}
+
+.removeBtn2:hover{
+    background-color: #fc4917;
+    color: white;
+}
+
+.assignedCar {
+    font-size: 12px;
+    color: rgb(178, 176, 176);
+    transition: all ease-in-out 0.20s;
+}
+
+.d-none {
+    display: none;
+}
+.buttonContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tourContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.tourWrapper img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tourContainer p {
+    margin: 0px;
+    line-height: 1.4;
+    font-size: 13px;
+}
+
+.tourContainer h5 {
+    margin: 0px;
+    margin-top: 5px;
+    color: #F06200;
+    font-size: 15px;
+}
+
+.vehicleName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vehicleName i {
+    color: #F06200;
+    font-size: 16px;
+}
+
+.driverAssigned {
+    color: gray;
+}
+
+/**/
+.tourWrapper:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay styling */
+
+.tourWrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+.tourWrapper:hover {
+    transform: scale(1.05);
+}
+
+
+.tourWrapper .details {
+    padding: 5px;
+    background: #fff;
+}
+
+
+/* Overlay for the image */
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background: rgba(218, 218, 218, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    backdrop-filter: blur(1px); /* Applies blur effect to the background */
+}
+
+.tourWrapper:hover .imageOverlay {
+    opacity: 1;
+}
+
+.imageOverlay button {
+    padding: 10px 20px;
+    background: #F06200;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.imageOverlay button:hover {
+    background: #eea472;
+}
+
+.driverContainer {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    padding: 25px;
+}
+
+/* Wrapper for the image */
+.img-wrapper {
+    position: relative;
+    width: 150px; /* Set width for the wrapper */
+    height: 150px; /* Set height for the wrapper */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    border-radius: 50%; /* Optional: Makes the image circular */
+    margin: 0 auto; /* Centers the image wrapper inside the container */
+}
+
+/* Image inside the wrapper */
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the wrapper without distortion */
+    transition: transform 0.3s ease; /* Smooth zoom animation */
+}
+
+/* Hover effect */
+.driverContainer:hover .img-wrapper img {
+    transform: scale(1.2); /* Zooms the image */
+}
+
+.driverContainer:hover .assignedCar {
+    color: black;
+}
+
+.addTourBtn {
+    border: none;
+    background-color: #f7eee9;
+    color: white;
+    font-weight: bold;
+    color: rgb(106, 104, 104);
+    transition: all ease-in-out 0.20s;
+}
+
+.addTourBtn:hover {
+    border: none;
+    background-color: #F06200;
+    color: white;
+    font-weight: bold;
+}
+
+.container.userTable {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+.userTable h1 {
+    text-align: center;
+    color: #333;
+}
+.userTable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.userTable th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.userTable th {
+    background-color: #ff954e;
+    color: white;
+}
+.userTable tr:hover {
+    background-color: #f1f1f1;
+}
+.userTable .options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.userTable .btn {
+    background-color: #F06200;
+    color: white;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.userTable .btn:hover {
+    background-color: #ffcaa7;
+}
+
+.userProfile {
+    height: 50px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.section {
+    display: none; 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+.active {
+    display: block; 
+    opacity: 1; 
+}
+
+#popup {
+    font-family: Arial, sans-serif;
+}
+#popup .button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#popup .popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 100;
+    width: 400px;
+}
+#popup .hidden {
+    display: none;
+}
+#popup .visible {
+    display: block;
+}
+#popup .header {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#popup table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+#popup th, #popup td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#popup th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,236 @@
+/* chats.css - Instagram Style Chat UI */
+:root {
+    --ig-bg: #ffffff;
+    --ig-border: #dbdbdb;
+    --ig-secondary: #8e8e8e;
+    --ig-accent: #0095f6;
+    --ig-hover: #fafafa;
+    --ig-active: #efefef;
+    --orange-primary: #ff6200;
+    --orange-light: #fff5f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.messenger-wrapper {
+    display: flex;
+    max-width: 935px;
+    height: calc(100vh - 40px);
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid var(--ig-border);
+    border-radius: 4px;
+}
+
+/* Sidebar Styling */
+.messenger-sidebar {
+    width: 350px;
+    border-right: 1px solid var(--ig-border);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--ig-border);
+}
+
+.sidebar-header h1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.search-box {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--ig-border);
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input-wrapper i {
+    position: absolute;
+    left: 12px;
+    color: var(--ig-secondary);
+    font-size: 14px;
+}
+
+.search-field {
+    width: 100%;
+    padding: 8px 12px 8px 35px;
+    background: #efefef;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.search-field:focus {
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 0 1px var(--ig-border);
+}
+
+.chats-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.chat-item:hover {
+    background-color: var(--ig-hover);
+}
+
+.chat-item.active {
+    background-color: var(--ig-active);
+}
+
+.chat-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.chat-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.chat-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-metadata {
+    display: flex;
+    font-size: 14px;
+    color: var(--ig-secondary);
+}
+
+.last-message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.chat-dot {
+    margin: 0 4px;
+}
+
+/* Main Content Styling */
+.messenger-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fff;
+}
+
+.placeholder-icon {
+    width: 96px;
+    height: 96px;
+    border: 2px solid #262626;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.placeholder-icon i {
+    font-size: 40px;
+    transform: rotate(-15deg);
+}
+
+.messenger-content h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.messenger-content p {
+    color: var(--ig-secondary);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.btn-send-msg {
+    background-color: var(--orange-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-send-msg:hover {
+    background-color: #e65800;
+}
+
+/* Custom Scrollbar */
+.chats-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chats-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chats-list::-webkit-scrollbar-thumb {
+    background: #dbdbdb;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .messenger-wrapper {
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    .messenger-sidebar {
+        width: 100%;
+    }
+
+    .messenger-content {
+        display: none;
+    }
+}

@@ -1,287 +1,501 @@
-*{
-    font-family: "Inter", sans-serif;
+* {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter" !important;
+}
+
+.logo-image {
+  width: 150px;
+}
+
+.nav-item {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.nav-link {
+  font-size: 16px !important;
+}
+
+.nav-link:hover {
+  color: #ff4d00 !important;
+}
+
+.Login-btn {
+  border: none;
+  color: #ff4d00 !important;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: bold !important;
+}
+
+.Login-btn:hover {
+  color: white !important;
+  background-color: #ff4d00 !important;
 }
 
 body {
   overflow-x: hidden;
+  background-color: #f8f9fa;
 }
 
 .container.head {
   position: relative;
+  max-width: 1200px;
+  margin-top: 20px;
 }
 
-.cover-photo{
-  background-color: #007bff; 
-  height: 300px;
+.profile-container {
+  background: white;
+  border-radius: 20px;
+  overflow: visible;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.cover-photo {
+  background: url('../backgrounds/bg-palawan.jpg') no-repeat center center/cover;
+  height: 350px;
   width: 100%;
   position: relative;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
 }
 
 .change-cover-btn {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  background-color: #fff;
-  color: #007bff;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
   padding: 8px 16px;
-  border: 1px solid #007bff;
-  border-radius: 5px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .display-picture {
   position: absolute;
-  top: 235px;
-  left: 35px;
-  width: 156px;
-  height: 160px;
+  bottom: -60px;
+  left: 40px;
+  width: 180px;
+  height: 180px;
+  z-index: 10;
 }
 
 .display-picture img {
   border-radius: 50%;
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  border: 4px solid white;
+  border: 6px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.profile-name {
-  position: absolute;
-  top: 305px;
-  left: 210px;
+.profile-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px 30px 240px;
+  min-height: 140px;
 }
 
-.profile-name h2 {
+.profile-name-text h2 {
   margin: 0;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 800;
+  color: #000;
 }
 
-.profile-name p {
-  margin: 5px 0;
-  color: #555;
+.friend-count {
+  color: #ff6200;
+  font-weight: 800;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
-.profile-actions {
-  position: absolute;
-  top: 315px;
-  right: 20px;
+.joined-tours {
+  color: #666;
+  font-size: 14px;
 }
 
-.message-btn, .add-btn {
-  padding: 10px 20px;
+.profile-actions-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.message-btn,
+.add-btn {
+  padding: 10px 25px;
   border: none;
   cursor: pointer;
-  margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 800;
+  transition: 0.3s;
 }
 
 .message-btn {
-  background-color: #f0f0f0;
-  color: #555;
+  background-color: #e0e0e0;
+  color: #666;
 }
 
 .add-btn {
   background-color: #ff6200;
   color: white;
+  box-shadow: 0 4px 15px rgba(255, 98, 0, 0.2);
+}
+
+.add-btn:hover {
+  background-color: #e55800;
 }
 
 .main {
   display: flex;
-  margin-top: 5%;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-
-    
-  .leftside-bio {
-        flex: 1;
-        position: sticky;
-        top: -53px;
-    }
-
-    .Bio, .AboutMe, .Friends {
-        width: 50%;
-        margin-bottom: 20px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        padding: 15px;
-        padding-bottom: 0px;
-        border-radius: 8px;
-        background-color: #fff;
-    }
-
-    .AboutMe h3, .Friends h3 {
-        font-weight: bold;
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .friends-img {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 5px;
-  }
-
-    .bonfriends{
-      align-items: center;
-      
-      .col-md-4 p {
-          text-align: left;
-          margin-top: 5px;
-          font-size: 10px;
-          font-weight: 800;
-      }
-  
-    }
-    
-    .findpeople .input-group {
-        max-width: 80%;
-    }
-
-    .input-group i {
-        color: #ff6200;
-        font-size: 25px;
-    }
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 0 15px 50px;
 }
- 
+
+
+.leftside-bio {
+  flex: 1;
+  position: sticky;
+  top: -53px;
+}
+
+
+.Bio,
+.AboutMe,
+.Friends,
+.findpeople {
+  margin-bottom: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.Bio p {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.Bio .bio-label {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  color: #000;
+  margin-top: 10px;
+}
+
+.AboutMe h3,
+.Friends h3,
+.findpeople h3 {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.about-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.about-item strong {
+  font-weight: 800;
+  color: #000;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.friend-item {
+  text-align: center;
+}
+
+.friends-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.friend-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-input-group {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+}
+
+.search-field {
+  flex: 1;
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.search-submit-btn {
+  background: none;
+  border: none;
+  color: #ff6200;
+  font-size: 24px;
+  padding: 0;
+  cursor: pointer;
+}
+
 .rightside {
-  flex: 2; 
-
-    .post-card-container {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-      
-    .post-card {
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px;
-    }
-    .profile {
-      display: flex;
-      align-items: center;
-    }
-    
-    .profile-img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-    
-    .host-info h4 {
-      margin: 0;
-      font-size: 14px;
-    }
-    
-    .host-info p {
-      margin: 0;
-      font-size: 12px;
-      color: gray;
-    }
-    
-    .date {
-      font-size: 12px;
-      color: gray;
-    }
-    
-    .card-image {
-      position: relative;
-    }
-    
-    .card-image img {
-      width: 100%;
-      height: 100%  ;
-      object-fit: cover;
-    }
-    
-    .carousel-controls {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-    }
-    
-    .prev-btn, .next-btn {
-      background-color: rgba(255, 255, 255, 0.8);
-      border: none;
-      padding: 5px;
-      cursor: pointer;
-      border-radius: 25%;
-      width: 35px;
-      height: 35px;
-      margin: 20px;
-    }
-    
-    .people-count {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 2px 8px;
-      border-radius: 15px;
-      font-size: 12px;
-    }
-    
-    .card-content {
-      padding: 15px;
-    }
-    
-    .card-content h3 {
-      font-size: 18px;
-      color: #ff6200;
-      margin: 0 0 10px;
-    }
-    
-    .card-content p {
-      font-size: 14px;
-      color: #555;
-    }
-    
-    .tour-action {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 15px;
-    }
-    
-    .info-btn {
-      font-size: 20px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: #ff6200;
-    }
-    
-    .join-btn {
-      padding: 8px 15px;
-      background-color: #ff6200;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    
-    .join-btn:hover {
-      background-color: #e55b00;
-    }  
+  flex: 2;
 }
 
+.tours-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.post-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.post-card {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+  border: none;
+}
+
+.profile-img-header {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.host-info h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: #000;
+}
+
+.host-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #ff6200;
+  font-weight: 700;
+}
+
+.card-date {
+  font-size: 12px;
+  color: #999;
+  font-weight: 700;
+}
+
+.card-image {
+  position: relative;
+  height: 400px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.carousel-arrow {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6200;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-arrow:hover {
+  background: white;
+}
+
+.people-count {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tour-title-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ff6200;
+  margin: 0;
+}
+
+.title-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-btn {
+  color: #ff6200;
+  font-size: 22px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.join-btn {
+  background: #ff6200;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background: #ff4500;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.search-results-dropdown {
+  position: absolute;
+  /* Allow it to overlap the navbar */
+  top: 100%;
+  /* Position just below the input */
+  left: 0;
+  /* Align with the left of the input */
+  z-index: 1000;
+  /* Ensure it appears above other elements */
+  display: none;
+  /* Initially hidden */
+}
+
+.dropdown-content {
+  background-color: white;
+  border-radius: 12px;
+  /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Shadow for depth */
+  padding: 15px;
+  /* Padding inside the dropdown */
+  width: 100%;
+  /* Match the width of the search input */
+}
+
+.list-group-item {
+  padding: 10px;
+  /* Padding for list items */
+  transition: background-color 0.3s;
+  /* Smooth background on hover */
+  cursor: pointer;
+  /* Pointer cursor for better UX */
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+  /* Highlight on hover */
+}
+
+.user-info {
+  font-size: 14px;
+  /* Standard font size */
+  color: #333;
+  /* Darker text color */
+}

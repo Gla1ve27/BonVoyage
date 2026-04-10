@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.content {
+    width: 83%;
+    height: 90%;
+    box-shadow: 0px 0px 9px -4px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.login-form {
+    width: 70%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sub-container1 {
+    padding: 50px;
+}
+
+.sub-container1 img {
+    height: 55px;
+    margin-bottom: 40px;
+}
+
+.sub-container1 h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sub-container1 p {
+    font-size: 14px;
+    margin-bottom: 51px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 9px;   
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.sub-container2 {
+    background-image: url(/assets/adminpictures/admin-picture.png);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-container {
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.loginBTN {
+    padding: 6px 50px;
+    background-color: #ff4d00;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+}

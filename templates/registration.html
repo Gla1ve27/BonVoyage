@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonVoyage</title>
+    <link rel="stylesheet" href="registration.css">
+    <!-- Bootstrap Import Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Importat link of Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Boxicon Import -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Icon Import link-->
+    <script src="https://kit.fontawesome.com/4a1486cbc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main container">
+        <div class="registration-container">
+            <div class="form">
+                <div class="headContainer">
+                    <div class="head">
+                        <img src="assets/Logo/BonVoyage - Square Logo.png" alt="logo">
+                        <div class="header-text">
+                            <span style="color: orangered; font-weight: bold;">New</span> Account Registration
+                        </div>
+                    </div>
+                    <div class="stepCounter">
+                        1/3
+                    </div>
+                </div>
+                <div class="sectionDescription">
+                    <span>Personal Information</span>
+                    BonVoyage is excited to meet you! Please give us some of your personal information for us to be familiar with who you are. We are excited to welcome you to the community.
+                </div>
+                <form action="" method="POST" novalidate id="registrationForm">
+                    <section class="personalInformation">
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <label for="fName">First Name</label>
+                                <input type="text" class="fName form-control" id="fName" placeholder="Enter your first name" required>
+                                <div class="invalid-feedback">Please provide your first name.</div>
+                            </div>
+                            <div class="col-6">
+                                <label for="lName">Last Name</label>
+                                <input type="text" class="lName form-control" id="lName" placeholder="Enter your last name" required>
+                                <div class="invalid-feedback">Please provide your last name.</div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <label for="mName">Middle Name</label>
+                                <input type="text" class="mName form-control" id="mName" placeholder="Enter your middle name" required>
+                                <div class="invalid-feedback">Please provide your middle name.</div>
+                            </div>
+                            <div class="col-4">
+                                <label for="suffix">Choose Suffix</label>
+                                <select name="cars" id="suffix" class="form-select" required>
+                                    <option value="volvo">N/A</option>
+                                    <option value="saab">Jr.</option>
+                                    <option value="mercedes">Sr.</option>
+                                    <option value="audi">I</option>
+                                    <option value="audi">II</option>
+                                    <option value="audi">III</option>
+                                    <option value="audi">Others</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a suffix.</div>
+                            </div>
+                            <div class="col-2">
+                                <label for="age">Age</label>
+                                <input type="text" class="age form-control" id="age" disabled placeholder="-">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="gender-options">
+                                            <label class="label" for="gender">Gender </label>
+                                            <input type="radio" name="gender" id="male" value="Male" required>
+                                            <label name="gender" for="male" class="radio-label">Male</label>
+
+                                            <input type="radio" name="gender" id="female" value="Female">
+                                            <label name="gender" for="female" class="radio-label">Female</label>
+
+                                            <input type="radio" name="gender" id="others" value="Others">
+                                            <label name="gender" for="others" class="radio-label">Others</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="email form-control" id="email" placeholder="Enter your Valid Email Address" required>
+                                        <div class="invalid-feedback">Please provide a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input type="text" class="phoneNumber form-control" id="phoneNumber" placeholder="Enter your Phone Number" required>
+                                        <div class="invalid-feedback">Please provide your phone number.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 calendar-container">
+                                <label class="label" for="birthday">Birthday: <span class="required">*</span></label>
+                                <input name="bDay" type="date" id="birthday" placeholder="Select Birthday" hidden readonly>
+                                <div class="calendar">
+                                    <div class="calendar-head">
+                                        <div id="month-display">
+                                            <span id="month-name"></span>
+                                        </div>
+                                        <input type="number" id="year-input" min="1900" max="2100" value="2024">
+                                        <div class="controls">
+                                            <button id="prevmonth">❮</button>
+                                            <button id="nextmonth">❯</button>
+                                        </div>
+                                    </div>
+                                    <div class="day-labels">
+                                        <span>Mo</span>
+                                        <span>Tu</span>
+                                        <span>We</span> 
+                                        <span>Th</span>
+                                        <span>Fr</span>
+                                        <span>Sa</span>
+                                        <span>Su</span>
+                                    </div>
+                                    <div class="calendar-days" id="days"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="addressInformation d-none">
+                        <div class="row">
+                            <div class="col-3">
+                                <label for="addressNum">Address Number</label>
+                                <input type="text" class="addressNum form-control" id="addressNum" placeholder="Ex. 485" required>
+                                <div class="invalid-feedback">Please provide your address number.</div>
+                            </div>
+                            <div class="col-9">
+                                <label for="street">Street Name</label>
+                                <input type="text" class="street form-control" id="street" placeholder="Ex. Emilio Jacinto St." required>
+                                <div class="invalid-feedback">Please provide your street name.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <label for="building">Building Name</label>
+                                <input type="text" class="building form-control" id="building" placeholder="Ex. Batumbakal Bldg." required>
+                                <div class="invalid-feedback">Please provide your building name.</div>
+                            </div>
+                            <div class="col-4">
+                                <label for="unitNo">Unit No.</label>
+                                <input type="text" class="unitNo form-control" id="unitNo" placeholder="Ex. 20" required>
+                                <div class="invalid-feedback">Please provide your unit number.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="city">City</label>
+                                <input type="text" class="city form-control" id="city" placeholder="Ex. Manila" required>
+                                <div class="invalid-feedback">Please provide your city.</div>
+                            </div>
+                        <div class="col-4">
+                            <label for="postalCode">Postal Code</label>
+                            <input type="text" class="postalCode" id="postalCode" placeholder="Ex. 1800">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Please upload your valid ID</label>
+                            <label for="vID" class="vID-design">
+                                <i class='bx bx-upload' ></i>
+                                <p><span style="font-weight: bold;">Choose a file</span> or drag it here.</p>
+                            </label>
+                            <input type="file" class="vID" id="vID">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="createAccount d-none">
+                    <div class="row">
+                        <div class="col">
+                            <label for="username">Create your username</label>
+                            <input type="text" class="username" id="username" placeholder="Enter Username">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="password">Create your Password</label>
+                            <input type="password" class="password" id="password" placeholder="********">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="reenterpassword">Re-enter Password</label>
+                            <input type="Password" class="reenterpassword" id="reenterpassword" placeholder="********">
+                        </div>
+                    </div>
+                </section>
+
+                <div class="divBtn1">
+                    <button class="bottomBtn prevButton" id="prevButton">PREV</button>
+                    <button class="bottomBtn nextButton" id="nextButton1">NEXT</button>
+                    <button class="createAccountBtn d-none" id="prevButton">Create Account</button>
+                </div>
+
+            </div>
+            <div class="steps">
+                <div class="sideimgContainer">
+                    <div class="stepInfo">
+                        <i class='bx bxs-user-circle'></i>
+                        <h4>STEP 1</h4>
+                        <h5>Personal Information</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere asperiores iste consequuntur magnam, hic officiis quisquam, repudiandae quibusdam, reiciendis veniam at placeat. Aspernatur perspiciatis ipsam eos dicta illo quos ipsum!</p>
+                    </div>
+                    <div class="loginContainer">
+                        <p>Do you already have an account?</p>
+                        <button>Login</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('registrationForm');
+            
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                if (form.checkValidity() === false) {
+                    event.stopPropagation();
+                } else {
+                    alert("Form Submitted Successfully!");
+                }
+
+                form.classList.add('was-validated');
+            });
+        });
+    </script>
+    <script src="registration.js"></script>
+</body>
+</html>

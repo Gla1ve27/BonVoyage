@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: .6fr .4fr;
+    height: 100%;
+    width: 90%;
+}
+
+.sub-container1 {
+    background-color: white;
+    padding: 50px;
+}
+
+.backdiv {
+    display: flex;
+    justify-content: start;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr .1fr;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.content-container1 {
+    display: flex;
+    gap: 10px;
+}
+
+.line {
+    display: inline;
+}
+
+.registration-line {
+    height: 8px;
+    background-color: #f06200;
+    margin: -15px 0 10px;
+    width: 20%;
+    border-radius: 13px;
+    margin-top: 3px;
+}
+
+.gulo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.payment-option {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background-color: #FDFDFD;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: .8fr .2fr;
+}
+
+.payment-option p{
+    padding-left: 35px;
+    text-align: start;
+    margin: 0;
+    font-size: 11px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 40px;
+}
+
+.logo2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo2 img {
+    width: 50px;
+    height: 23px;
+}
+
+.payment-option-header {
+    display: flex; 
+    align-items: center;
+}
+  
+.payment-option.active {
+    background-color: #FEF7F0;
+    height: auto; 
+}
+  
+.payment-option.collapsed {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    height: 90px;
+}
+  
+.payment-option .details {
+    display: none;
+    text-align: left;
+    margin-top: 5px; 
+}
+  
+.payment-option.active .details {
+    display: block; 
+}
+  
+input[type="radio"] {
+    display: none;
+}
+  
+label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+ }
+  
+label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+  
+label::after { 
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+  
+input[type="radio"]:checked + label::before {
+    border-color: #F06200;
+}
+  
+input[type="radio"]:checked + label::after {
+    transform: scale(1);
+}
+  
+.payment-option input[type="radio"]:checked + label {
+    color: black;
+}
+  
+label span {
+    vertical-align: middle; 
+}
+  
+.details input[type] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-left: 35px;
+}
+
+.code {
+    display: flex;
+    gap: 10px;
+}
+
+.sub-container2 {
+    box-shadow: -2px 1px 9px -1px rgba(0,0,0,0.75);
+    background-color: #FDFDFD;
+    display: block;
+    padding: 60px 30px;
+    text-align: start;
+}
+
+p {
+    font-size: 14px;
+}
+
+.square {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.solid-square {
+    border: 1px solid black;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1fr .29fr;
+    padding: 10px;
+}
+
+.price {
+    margin-right: 0 10px;
+    padding: 0;
+}
+
+.no-margin {
+    margin-bottom: 0;
+}
+
+.otherfeesdiv {
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr .29fr;
+    padding: 0 10px;
+    padding-top: 10px;
+}
+
+.voucherdiv {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4px;
+}
+
+.voucherapplieddiv {
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr .29fr;
+    padding: 0 10px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.line1 {
+    background-color: #d9d9d952;
+    height: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+input[type] {
+    width: 80%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.totaldiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.orange {
+    color: #F06200;
+    font-weight: bold;
+}
+
+.btndiv {
+    padding: 0 30px;
+}
+
+.pay {
+    color: rgba(255, 255, 255, 0.85);
+    background-color: #F06200;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+}
+
+.info {
+    padding: 0 10px;
+}
+
+.apply {
+    color: rgba(255, 255, 255, 0.85);
+    background-color: #F06200;
+    width: 15%;
+    padding: 4px;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+}

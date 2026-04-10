@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BonVoyage</title>
+
+
+    <!-- Boxicon Import-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Bootstrap imports -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="partnerApplication.css">
+
+    <!--Website Icon-->
+    <link rel="shortcut icon" href="assets/Logo/BonVoyage - Square Logo.png" type="image/x-icon">
+
+    <!-- Importat link of Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main container">
+        <div class="form">
+            <div class="head">
+                <div class="title">
+                    <a href="/partnership.html">
+                        <img src="/assets/Logo/BonVoyage - Square Logo.png" alt="logo" class="logo">
+                    </a>
+                    <h3><span style="color: orangered;">New</span> Partner Registration</h3>
+                </div>
+                <div class="stepCount">
+                    1/3
+                </div>
+            </div>
+            <div class="stepTitle">
+                Personal Information
+                <p>BonVoyage is excited to meet you! Please give us some of your personal information for us to be familiar with who you are. We are excited to welcome you to the community.</p>
+            </div>
+            <section class="personalInfo">
+                <div class="name">
+                    <div>
+                        <label for="fName">First Name</label>
+                        <input type="text" class="fName" id="fName">
+                    </div>
+                    <div>
+                        <label for="lName">Last Name</label>
+                        <input type="text" class="lName" id="lName">
+                    </div>
+                    <div>
+                        <label for="mName">Middle Name</label>
+                        <input type="text" class="mName" id="mName">
+                    </div>
+                </div>
+                <div class="ageGender">
+                    <div>
+                        <label for="fName">Birthday</label>
+                        <input type="date" class="bDay" id="bDay">
+                    </div>
+                    <div>
+                        <label for="lName">Age</label>
+                        <input type="text" class="age" id="age" disabled>
+                    </div>
+                    <div>
+                        <label for="lName">Gender</label>
+                        <input type="text" class="lName" id="lName">
+                    </div>
+                </div>
+                <div class="homeAddress">
+                    <div>
+                        <label for="fName">Home Address</label>
+                        <input type="text" class="address" id="address" placeholder="Enter your complet address">
+                    </div>
+                </div>
+                <div class="emailPhone">
+                    <div>
+                        <label for="fName">Email Address</label>
+                        <input type="text" class="bDay" id="bDay">
+                    </div>
+                    <div>
+                        <label for="lName">Phone Number</label>
+                        <input type="text" class="age" id="age">
+                    </div>
+                </div>
+            </section>
+            <section class="companyInfo d-none">
+                <div class="companyInfoDiv">
+                    <label for="">Company Name</label>
+                    <input type="text" class="companyName" id="companyName">
+                </div>
+                <div class="companyInfoDiv">
+                    <div class="upperLabelAddress">
+                        <label for="">Company Address</label>
+                        <div>
+                            <input type="checkbox" id="sameAddress" class="sameAddress">
+                            <label for="sameAddress" class="sameLabel">Same as your Address</label>
+                        </div>
+                    </div>
+                    <input type="text" class="companyName" id="companyName">
+                    <div class="lowerPart">
+                        <div class="logoUpload">
+                            <label for="companyLogo" class="companyLogoDiv">
+                                <img src="img/partnership/upload.png" alt="upload">
+                                <p>Click here to upload your Logo</p>
+                            </label>
+                            <input type="file" class="companyLogo" id="companyLogo" >
+                        </div>
+                        <div class="otherComapanyDetails">
+                            <div class="companyInfoDiv">
+                                <label for="cars">Type of Lessee:</label>
+                                <div class="compWrapper">
+                                    <select name="cars" id="cars">
+                                        <option value="volvo">Individual</option>
+                                        <option value="saab">Small Company</option>
+                                        <option value="mercedes">Medium Company</option>
+                                        <option value="audi">Large Company</option>
+                                    </select>
+                                    <i class='bx bxs-info-circle'></i>
+                                </div>
+                            </div>
+                            <div class="companyInfoDiv">
+                                <label for="">Please type <span style="color: orangered; font-weight: bold;">"Confirm"</span> to proceed</label>
+                                <input type="text" class="companyName" id="companyName">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="accountCreation d-none">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="username">Password</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="username">Repeat Password</label>
+                    <input type="text">
+                </div>
+            </section>
+
+            <div class="buttonContainer">
+                <button class="prevBtn">Previous</button>
+                <button class="nextBtn">Next</button>
+                <button class="create d-none">Create your Account</button>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="/img/partnership/registration-side-pic.jpg" alt="regis">
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    const prevBtn = document.querySelector(".prevBtn");
+    const nextBtn = document.querySelector(".nextBtn");
+    const companyInfo = document.querySelector(".companyInfo");
+    const personalInfo = document.querySelector(".personalInfo");
+    const accountCreation = document.querySelector(".accountCreation");
+    const stepTitle = document.querySelector(".stepTitle");
+    const createBtn = document.querySelector(".create");
+    const stepCount = document.querySelector(".stepCount");
+    let part = 1;
+
+    nextBtn.addEventListener("click", ()=>{
+        console.log("Here")
+        if(part<=3 && part!=3){
+            hideAll ();
+            part++;
+        }
+        if (part == 1){
+            personalInfo.classList.remove("d-none");
+            stepTitle.innerHTML = `Personal Information
+                <p>BonVoyage is excited to meet you! Please give us some of your personal information for us to be familiar with who you are. We are excited to welcome you to the community.</p>`
+                stepCount.innerHTML = `1/3`;
+        }
+        else if (part == 2){
+            companyInfo.classList.remove("d-none");
+            stepTitle.innerHTML = `Company Information
+                <p>Provide your Company information. Tell us more about your company. Individual or big lessee are welcome to create an account.</p>`;
+                stepCount.innerHTML = `2/3`;
+                createBtn.classList.add("d-none");
+                nextBtn.classList.remove('d-none');
+        }
+        else if (part == 3){
+            accountCreation.classList.remove("d-none");
+            stepTitle.innerHTML = `Create your Account
+                <p>To have access with our website's services, you need to create your account. With this, we can help each other to grow and earn.</p>`;
+                stepCount.innerHTML = `Final Step`;
+            createBtn.classList.remove("d-none");
+            nextBtn.classList.add('d-none');
+        }
+    })
+
+    prevBtn.addEventListener("click", ()=>{
+        if (part<= 3 && part!=1){
+            hideAll ();
+            part--;
+        }
+        if (part == 1){
+            personalInfo.classList.remove("d-none");
+            stepTitle.innerHTML = `Personal Information
+                <p>BonVoyage is excited to meet you! Please give us some of your personal information for us to be familiar with who you are. We are excited to welcome you to the community.</p>`
+                stepCount.innerHTML = `1/3`;
+        }
+        else if (part == 2){
+            companyInfo.classList.remove("d-none");
+            stepTitle.innerHTML = `Company Information
+                <p>Provide your Company information. Tell us more about your company. Individual or big lessee are welcome to create an account.</p>`;
+                stepCount.innerHTML = `2/3`;
+                createBtn.classList.add("d-none");
+                nextBtn.classList.remove('d-none');
+        }
+        else if (part == 3){
+            accountCreation.classList.remove("d-none");
+            stepTitle.innerHTML = `Create your Account
+                <p>To have access with our website's services, you need to create your account. With this, we can help each other to grow and earn.</p>`;
+                stepCount.innerHTML = `Final Step`;
+            createBtn.classList.remove("d-none");
+            nextBtn.classList.add('d-none');
+        }
+    })
+
+    function hideAll (){
+        companyInfo.classList.add("d-none");
+        personalInfo.classList.add("d-none");
+        accountCreation.classList.add("d-none");
+    }
+
+</script>
+</html>
